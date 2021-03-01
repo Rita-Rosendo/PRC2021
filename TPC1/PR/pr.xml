@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/aninhas/Desktop/2020_2021/PLC/2Semestre/PRC/TPCs/TPC1/PR/pr.dtd">
+<pr>
+    <meta>
+        <key>PRC_2021_TP1</key>
+        <title>Gerar um dataset em TTL </title>
+        <bdate>28-02-2021</bdate>
+        <edate>01-03-2021</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/"> José Carlos Ramalho </supervisor>
+    </meta>
+    <workteam>
+        <worker number="A84475">
+            <name>Ana Rita Miranda Rosendo</name>
+            <email>a84475@alunos.uminho.pt</email>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            Foi-nos proposta a realização de um trabalho de casa que tem como objetivo gerar um dataset num <b>TTL</b> seguindo o <b>TTL</b> criado na aula.
+        </p>
+        <p>
+            Este TPC divide-se em duas partes. A primeira é gerar um dataset em JSON de acordo com os requisitos e a segunda é criar um conversor, numa linguagem à nossa escola, de JSON para <b>TTL</b> de acordo com a ontologia definida na aula.
+        </p>
+        <p>
+            Primeiramente, o dataset em JSON foi criado. Para tal, foi usado um gerador de datasets em JSON online, o "JSON Generator". O dataset criado seguiu os seguintes requisitos : ter 4 UCs, ter 4 Docentes e ter 200 alunos.
+        </p>
+        <p>
+            De seguida, recorrendo à linguagem de programação Java, a conversão do dataset em JSON num <b>TTL</b> foi feita.
+        </p>
+    </abstract>
+    <deliverables>
+        <link url="https://next.json-generator.com/">JSON Generator</link>
+        <link url="./pr.dtd">Project Record - DTD</link>
+        <link url="./pr.xml">Project Record - XML</link>
+        <link url="./pr.xsl">Project Record - XSL</link>
+        <link url="./pr.html">Project Record - HTML</link>
+        <link url="../ConverteJSONtoTTL/dataset.json">Dataset em JSON</link>
+        <link url="../ConverteJSONtoTTL/uc.ttl">TTL criada</link>
+        <link url="../ConverteJSONtoTTL/src/Main.java">Programa Em Java</link>
+        
+    </deliverables>
+</pr>
