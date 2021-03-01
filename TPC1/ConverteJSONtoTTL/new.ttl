@@ -1,0 +1,1331 @@
+@prefix : <http://www.semanticweb.org/aninhas/ontologies/uc#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/aninhas/ontologies/uc> .
+
+<http://www.semanticweb.org/aninhas/ontologies/uc> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#ensina
+:ensina rdf:type owl:ObjectProperty ;
+        owl:inverseOf :éEnsinadaPor ;
+        rdfs:domain :Professor ;
+        rdfs:range :UnidadeCurricular .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#frequenta
+:frequenta rdf:type owl:ObjectProperty ;
+           rdfs:domain :Aluno ;
+           rdfs:range :UnidadeCurricular .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#éEnsinadaPor
+:éEnsinadaPor rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#anoLetivo
+:anoLetivo rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#designação
+:designação rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#nome
+:nome rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#Aluno
+:Aluno rdf:type owl:Class ;
+       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                         owl:onProperty :frequenta ;
+                         owl:someValuesFrom :UnidadeCurricular
+                       ] .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#Professor
+:Professor rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :ensina ;
+                             owl:someValuesFrom :UnidadeCurricular
+                           ] .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#UnidadeCurricular
+:UnidadeCurricular rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+###  http://www.semanticweb.org/aninhas/ontologies/uc#AlgC
+:AlgC rdf:type owl:NamedIndividual ,
+                  :UnidadeCurricular ;
+         :anoLetivo "2020/2021" ;
+         :designação "Algoritmos e Complexidade" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#PRI
+:PRI rdf:type owl:NamedIndividual ,
+                  :UnidadeCurricular ;
+         :anoLetivo "2020/2021" ;
+         :designação "Processamento e Representação de Informação" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#SD
+:SD rdf:type owl:NamedIndividual ,
+                  :UnidadeCurricular ;
+         :anoLetivo "2020/2021" ;
+         :designação "Sistemas Distribuidos" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#SPLN
+:SPLN rdf:type owl:NamedIndividual ,
+                  :UnidadeCurricular ;
+         :anoLetivo "2020/2021" ;
+         :designação "Scripting no Processamento de Linguagem Natural" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#jcr
+:jcr rdf:type owl:NamedIndividual ,
+              :Professor ;
+     :ensina :PRC ;
+     :nome "José Carlos Ramalho" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#jj
+:jj rdf:type owl:NamedIndividual ,
+              :Professor ;
+     :ensina :SPLN ;
+     :nome "José João Almeida" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#jbb
+:jbb rdf:type owl:NamedIndividual ,
+              :Professor ;
+     :ensina :AlgC ;
+     :nome "João Bernardo Barros" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#jno
+:jno rdf:type owl:NamedIndividual ,
+              :Professor ;
+     :ensina :SD ;
+     :nome "José Orlando Pereira" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84295
+:A84295 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Jessie Myers" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84167
+:A84167 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Heath Potts" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84240
+:A84240 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Lessie Rowe" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84997
+:A84997 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Schneider Everett" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84012
+:A84012 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Villarreal Pruitt" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84489
+:A84489 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Walsh Barnett" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84556
+:A84556 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Aguirre Luna" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84706
+:A84706 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Collins Fulton" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84685
+:A84685 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Sandoval Case" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84163
+:A84163 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Sheryl Dunn" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84015
+:A84015 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Myra Wilkerson" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84752
+:A84752 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Mosley Camacho" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84610
+:A84610 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Sofia Byrd" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84344
+:A84344 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Mccullough Albert" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84134
+:A84134 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Debbie English" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84909
+:A84909 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Irene Nielsen" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84887
+:A84887 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Dominguez Benton" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84452
+:A84452 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Gibson Scott" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84056
+:A84056 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Taylor Manning" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84900
+:A84900 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Larson Madden" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84657
+:A84657 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Glass Pena" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84951
+:A84951 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Mckee Knowles" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84397
+:A84397 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Hogan Rice" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84504
+:A84504 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Reba Gamble" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84867
+:A84867 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Walker Bernard" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84695
+:A84695 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Josephine Copeland" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84706
+:A84706 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Bishop Hodges" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84752
+:A84752 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Oneil Perez" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84330
+:A84330 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Finley Ferrell" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84156
+:A84156 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Freida Keith" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84487
+:A84487 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Matilda Johnston" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84909
+:A84909 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Lawson Jenkins" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84238
+:A84238 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Rosario Craig" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84798
+:A84798 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Dena Holmes" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84105
+:A84105 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Rae Orr" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84800
+:A84800 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Wilder Allen" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84138
+:A84138 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Raquel Miles" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84726
+:A84726 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Lourdes Dorsey" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84415
+:A84415 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Oneal Stokes" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84662
+:A84662 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Michael Roman" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84732
+:A84732 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Boyle Skinner" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84967
+:A84967 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Joseph Armstrong" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84808
+:A84808 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Kirk Mccarthy" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84636
+:A84636 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Paul Salinas" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84245
+:A84245 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Diane Riley" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84362
+:A84362 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Rosanne Adkins" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84635
+:A84635 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Rodriguez Arnold" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84554
+:A84554 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Debra Banks" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84324
+:A84324 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Latonya Holland" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84311
+:A84311 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Fern Rosario" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84136
+:A84136 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Pam Goodman" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84656
+:A84656 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Farrell Livingston" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84474
+:A84474 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Emily Christian" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84899
+:A84899 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Cortez Riggs" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84014
+:A84014 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Lorraine Burt" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84035
+:A84035 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Latoya Greer" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84313
+:A84313 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Mable Serrano" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84380
+:A84380 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Helga Blair" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84793
+:A84793 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Marilyn Romero" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84706
+:A84706 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Hughes Mercer" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84237
+:A84237 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Toni Branch" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84921
+:A84921 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Frazier Hale" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84525
+:A84525 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Snider Eaton" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84783
+:A84783 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Ballard Daniels" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84511
+:A84511 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Gomez Suarez" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84657
+:A84657 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Fisher Dillard" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84443
+:A84443 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Cameron Brock" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84568
+:A84568 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Marsha Odonnell" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84717
+:A84717 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Santiago Morse" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84839
+:A84839 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Blevins Hopper" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84143
+:A84143 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Clemons Holman" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84845
+:A84845 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "French Roberson" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84130
+:A84130 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Klein Mann" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84402
+:A84402 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Blair Carlson" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84588
+:A84588 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Bobbi Moore" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84996
+:A84996 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Ofelia Dennis" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84582
+:A84582 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Lynch Levine" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84600
+:A84600 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Teresa Ramsey" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84698
+:A84698 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Greene Munoz" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84579
+:A84579 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Morin Guthrie" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84425
+:A84425 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Hays Berry" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84718
+:A84718 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Decker Sloan" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84298
+:A84298 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Ladonna Wooten" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84202
+:A84202 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Harrington Patton" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84319
+:A84319 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Pat Reilly" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84853
+:A84853 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Kelly Hardin" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84124
+:A84124 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Salinas Sellers" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84206
+:A84206 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Tasha Duncan" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84969
+:A84969 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Eve Ingram" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84495
+:A84495 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Angela Lyons" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84536
+:A84536 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Bridget Garner" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84641
+:A84641 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "May Key" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84985
+:A84985 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Preston Conley" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84345
+:A84345 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Shirley Gordon" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84550
+:A84550 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Brock Todd" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84569
+:A84569 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Kerr Nunez" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84508
+:A84508 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Geneva Carter" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84780
+:A84780 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Kara Booker" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84670
+:A84670 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Moran Decker" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84274
+:A84274 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Alissa Andrews" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84990
+:A84990 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Mcleod Wilder" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84502
+:A84502 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Vaughn Bond" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84083
+:A84083 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Hancock Wise" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84472
+:A84472 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Ellis Curtis" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84775
+:A84775 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Reid Miller" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84352
+:A84352 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Caitlin Maynard" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84119
+:A84119 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Suzette Kirkland" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84875
+:A84875 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Bowen Kramer" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84838
+:A84838 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Haney Puckett" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84087
+:A84087 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Elinor Morales" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84743
+:A84743 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Stanley Gross" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84283
+:A84283 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Le Kerr" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84318
+:A84318 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Bridgett Freeman" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84711
+:A84711 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Lloyd Mack" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84059
+:A84059 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Pace Ramirez" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84455
+:A84455 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Skinner Kirk" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84220
+:A84220 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Lucille Perry" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84319
+:A84319 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Molly Byers" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84689
+:A84689 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Mercedes Lane" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84793
+:A84793 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Webb Nash" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84171
+:A84171 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Lillie Mitchell" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84039
+:A84039 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Earnestine Mcmillan" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84075
+:A84075 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Norton Kemp" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84279
+:A84279 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Mathis Robinson" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84004
+:A84004 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Zelma Bowers" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84604
+:A84604 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Sellers Murphy" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84832
+:A84832 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Betty Ratliff" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84490
+:A84490 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Michele Nicholson" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84441
+:A84441 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Sasha Peck" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84283
+:A84283 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Agnes Farmer" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84926
+:A84926 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Annette Estes" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84513
+:A84513 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Sexton Maldonado" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84262
+:A84262 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Danielle Hansen" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84059
+:A84059 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Tessa Floyd" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84651
+:A84651 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Wagner Walters" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84077
+:A84077 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Smith Griffin" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84489
+:A84489 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Fletcher Hurst" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84580
+:A84580 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Oliver Calderon" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84191
+:A84191 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Graham Melendez" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84704
+:A84704 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Kline Valdez" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84757
+:A84757 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Ferguson Bishop" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84160
+:A84160 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Kayla Petty" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84671
+:A84671 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Karin Osborne" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84424
+:A84424 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Lyons Vance" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84566
+:A84566 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Duran Barton" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84794
+:A84794 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Meredith Preston" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84138
+:A84138 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Vega Carr" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84889
+:A84889 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Luna Bullock" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84495
+:A84495 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Marian Rodriquez" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84635
+:A84635 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Eva Jackson" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84891
+:A84891 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Cox Hunt" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84117
+:A84117 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Eileen Odom" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84025
+:A84025 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Solis Craft" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84467
+:A84467 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Payne Calhoun" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84561
+:A84561 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Holt Burton" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84661
+:A84661 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Gould Wilkinson" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84400
+:A84400 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Annmarie Levy" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84388
+:A84388 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Lynn Obrien" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84148
+:A84148 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Shaw Gallagher" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84102
+:A84102 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Stacey Williams" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84797
+:A84797 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Rhonda Booth" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84831
+:A84831 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Ramos Weaver" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84730
+:A84730 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Stone Cervantes" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84420
+:A84420 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Cannon Sanford" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84947
+:A84947 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Natalia Chang" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84862
+:A84862 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Bauer Clarke" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84375
+:A84375 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Theresa Holt" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84829
+:A84829 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Chandra Pacheco" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84707
+:A84707 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Vivian Snyder" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84749
+:A84749 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Copeland Oneill" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84831
+:A84831 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Bobbie Contreras" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84548
+:A84548 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Lindsey Francis" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84550
+:A84550 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Courtney Hutchinson" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84050
+:A84050 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Roach Duke" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84290
+:A84290 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Nicholson Delaney" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84959
+:A84959 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Lester Day" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84959
+:A84959 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Lakisha Collier" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84442
+:A84442 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Craft Boyle" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84239
+:A84239 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Tommie Blackwell" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84376
+:A84376 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Banks Barber" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84424
+:A84424 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Violet Hartman" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84350
+:A84350 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Lara Goff" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84042
+:A84042 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Charlotte Porter" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84704
+:A84704 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Parker Shannon" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84893
+:A84893 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Hale Macdonald" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84932
+:A84932 rdf:type owl:NamedIndividual ;
+          :frequenta :AlgC ,
+          :nome "Gamble Caldwell" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84484
+:A84484 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Jewel Drake" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84827
+:A84827 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Rush Haynes" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84151
+:A84151 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Jimenez Kent" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84248
+:A84248 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Mandy Hahn" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84306
+:A84306 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Wells Wiggins" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84321
+:A84321 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Snyder Salas" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84140
+:A84140 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Lucas May" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84487
+:A84487 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Doris Jennings" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84905
+:A84905 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Barbara Greene" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84419
+:A84419 rdf:type owl:NamedIndividual ;
+          :frequenta :SPLN ,
+          :nome "Kitty Gallegos" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84003
+:A84003 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Isabelle Rios" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84332
+:A84332 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Newman Buckner" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84318
+:A84318 rdf:type owl:NamedIndividual ;
+          :frequenta :SD ,
+          :nome "Mooney Sanders" .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/uc#A84478
+:A84478 rdf:type owl:NamedIndividual ;
+          :frequenta :PRC ,
+          :nome "Maricela Wright" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
