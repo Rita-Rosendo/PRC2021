@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/aninhas/Desktop/2020_2021/PLC/2Semestre/PRC/TPCs/TPC1/PR/pr.dtd">
+<pr>
+    <meta>
+        <key>PRC_2021_TPC4</key>
+        <title>SPARQL</title>
+        <bdate>21-03-2021</bdate>
+        <edate>22-03-2021</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/"> José Carlos Ramalho </supervisor>
+    </meta>
+    <workteam>
+        <worker number="A84475">
+            <name>Ana Rita Miranda Rosendo</name>
+            <email>a84475@alunos.uminho.pt</email>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            Foi-nos proposta a realização de um trabalho de casa que tem como objetivo a criação de um servidor NodeJS que suporta uma interface para a execução de queries em <b>SPARQL</b>.
+        </p>
+        <p>
+            Primeiramente, foi necessário criar um repositório no <b>GraphDB</b> onde posteriormente se carregou um ficheiro rdf sobre a Tabela Periódica.
+        </p>
+        <p>
+            Por fim, foi desenvolvida uma app Web com os seguintos requisitos: ter uma Página Inicial, uma para a lista de elementos da tabela em que um dos campos quando clicado mostra a informação acerca de um determinado elemento, outra página para os grupos e outra para os períodos.
+        </p>
+    </abstract>
+    <deliverables>
+        <link url="./pr.dtd">Project Record - DTD</link>
+        <link url="./pr.xml">Project Record - XML</link>
+        <link url="./pr.xsl">Project Record - XSL</link>
+        <link url="./pr.html">Project Record - HTML</link>       
+    </deliverables>
+</pr>

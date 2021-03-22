@@ -1,0 +1,17 @@
+extends layout
+block content
+    table(class="w3-table-all")
+        thead
+            tr
+                th Número Atómico
+                th Símbolo
+                th Nome
+                th Informação
+        tbody
+            each e in elementos 
+                tr
+                    td=e.numAtomico
+                    td=e.simb
+                    td=e.nome
+                    td 
+                        button(class="btn btn-small" onclick="location.href='http://localhost:7700/elemento/:" + e.id + "'" type="button") info

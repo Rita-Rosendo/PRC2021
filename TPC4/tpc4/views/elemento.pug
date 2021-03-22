@@ -1,0 +1,35 @@
+extends layout
+block content
+    table(class="w3-table-all")
+        thead
+            thead
+            th Nome
+            th Símbolo
+            th Peso Atómico
+            th Número Atómico
+            th Côr
+            th Estado Standard
+            th Perído
+            th Bloco
+            th Grupo
+            th Classificação
+            th casRegistryID
+        tbody
+            each e in elemento
+                tr
+                    td=e.nome
+                    td=e.simbolo
+                    td=e.pesoAtomico
+                    td=e.numeroAtomico
+                    td=e.cor
+                    td=e.estadoStandard
+                    td=e.periodo
+                    td=e.bloco
+                    td=e.grupo
+                    td=e.classificacao
+                    td=e.casRegistryIDD
+                
+                
+
+
+

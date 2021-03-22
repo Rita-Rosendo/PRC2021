@@ -1,0 +1,14 @@
+extends layout
+block content
+    table(class="w3-table-all")
+        thead
+            tr
+                th Grupo
+                th Nome
+                th Número
+        tbody
+            each g in grupos
+                tr
+                    td=g.id
+                    td=g.nome
+                    td=g.numero
