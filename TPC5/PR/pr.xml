@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/aninhas/Desktop/2020_2021/PLC/2Semestre/PRC/TPCs/TPC1/PR/pr.dtd">
+<pr>
+    <meta>
+        <key>PRC_2021_TPC5</key>
+        <title>JCR_PUBS</title>
+        <bdate>25-03-2021</bdate>
+        <edate>26-03-2021</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/"> José Carlos Ramalho </supervisor>
+    </meta>
+    <workteam>
+        <worker number="A84475">
+            <name>Ana Rita Miranda Rosendo</name>
+            <email>a84475@alunos.uminho.pt</email>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            Foi-nos proposta a realização de um trabalho de casa que tem como objetivo a criar uma API de dados com as funcionaliadades de CRUD sobre o modelo criado.
+        </p>
+        <p>
+            Em primeiro lugar, foi necessário analisar o dataset <b>jcrpubs.xml</b>. Para tal, recorreu-se à ferramenta <b>Oxygen XML Editor</b> onde se gerou o ficheiro <b>DTD</b> do ficheiro <b>XML</b> fornecido.
+        </p>
+        <p>
+            Em segundo lugar, recorreu-se ao <b>Protégé</b> para construir uma parte estrutural inicial da ontologia baseada no dataset dado. Foi também necessário criar alguns indivíduos para servirem de modelo para o passo seguinte.
+        </p>
+        <p>
+            Em terceiro lugar, recorreu-se ao <b>Oxygen XML Editor</b> onde se criou uma stylesheet <b>XSLT</b> necessária para a povoação da ontologia com os indivíduos do dataset.
+        </p>
+        <p>
+            Em quarto lugar, carregou-se a ontologia no <b>Ontobud</b> criando um repositório novo denominado <b>A84475-TP5</b> e importou-se o ficheiro gerado no ponto anterior.
+        </p>
+    </abstract>
+    <deliverables>
+        <link url="./pr.dtd">Project Record - DTD</link>
+        <link url="./pr.xml">Project Record - XML</link>
+        <link url="./pr.xsl">Project Record - XSL</link>
+        <link url="./pr.html">Project Record - HTML</link>
+        <link url="../XML2TTL/jcrpubs.xml">Ficheiro XML fornecido</link>
+        <link url="../XML2TTL/jcrpubs.dtd">Ficheiro DTD gerado automaticamente a partir do ficheiro xml fornecido</link>
+        <link url="../XML2TTL/jrcpubsInicial.ttl">Ficheiro TTL Inicialmente Criado</link>
+        <link url="../XML2TTL/xml2ttl.xsl">Ficheiro XSLT </link>  
+        <link url="../XML2TTL/pubsGerado.ttl">Ficheiro TTL gerado através de uma stylesheet XSLT</link>  
+        <link url="../XML2TTL/final.ttl">Ficheiro TTL Final</link>
+        <link url="../XML2TTL/pubsToOntobud2.rdf">Ficheiro RDF necessário para o carregamento da ontologia no Ontobud</link>
+        
+    </deliverables>
+</pr>
+

@@ -1,0 +1,96 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Project Record</title>
+   </head>
+   <body>
+      <h1>
+         <center>Project Record</center>
+      </h1>
+      
+      <table style="width:80%">
+         <tr align="left">
+            <th><b>Key:</b></th>
+            <td>PRC_2021_TPC5</td>
+            <th><b>Begin Date:</b></th>
+            <td>25-03-2021</td>
+         </tr>
+         <tr align="left">
+            <th><b>Title:</b></th>
+            <td>JCR_PUBS</td>
+            <th><b>End Date:</b></th>
+            <td>26-03-2021</td>
+         </tr>
+         <tr align="left">
+            <th><b> Supervisor: </b></th>
+            <td> José Carlos Ramalho </td>
+         </tr>
+      </table>
+      <hr>
+      
+      <hr>
+      <h3>WorkTeam:</h3>
+      
+      <li>A84475 : 
+         Ana Rita Miranda Rosendo :
+         <a href="mailto:a84475@alunos.uminho.pt">a84475@alunos.uminho.pt</a></li>
+      
+      <hr>
+      
+      <hr>
+      <h3>Abstract:</h3>
+      
+      <div style="display:block; margin:10px;">
+         Foi-nos proposta a realização de um trabalho de casa que tem como objetivo a criar
+         uma API de dados com as funcionaliadades de CRUD sobre o modelo criado.
+         </div>
+      
+      <div style="display:block; margin:10px;">
+         Em primeiro lugar, foi necessário analisar o dataset <span style="font-weight: bold;">jcrpubs.xml</span>. Para tal, recorreu-se à ferramenta <span style="font-weight: bold;">Oxygen XML Editor</span> onde se gerou o ficheiro <span style="font-weight: bold;">DTD</span> do ficheiro <span style="font-weight: bold;">XML</span> fornecido.
+         </div>
+      
+      <div style="display:block; margin:10px;">
+         Em segundo lugar, recorreu-se ao <span style="font-weight: bold;">Protégé</span> para construir uma parte estrutural inicial da ontologia baseada no dataset dado.
+         Foi também necessário criar alguns indivíduos para servirem de modelo para o passo
+         seguinte.
+         </div>
+      
+      <div style="display:block; margin:10px;">
+         Em terceiro lugar, recorreu-se ao <span style="font-weight: bold;">Oxygen XML Editor</span> onde se criou uma stylesheet <span style="font-weight: bold;">XSLT</span> necessária para a povoação da ontologia com os indivíduos do dataset.
+         </div>
+      
+      <div style="display:block; margin:10px;">
+         Em quarto lugar, carregou-se a ontologia no <span style="font-weight: bold;">Ontobud</span> criando um repositório novo denominado <span style="font-weight: bold;">A84475-TP5</span> e importou-se o ficheiro gerado no ponto anterior.
+         </div>
+      
+      <hr>
+      
+      <hr>
+      <h3>Deliverables:</h3>
+      
+      <li><a href="./pr.dtd">Project Record - DTD</a></li>
+      
+      <li><a href="./pr.xml">Project Record - XML</a></li>
+      
+      <li><a href="./pr.xsl">Project Record - XSL</a></li>
+      
+      <li><a href="./pr.html">Project Record - HTML</a></li>
+      
+      <li><a href="../XML2TTL/jcrpubs.xml">Ficheiro XML fornecido</a></li>
+      
+      <li><a href="../XML2TTL/jcrpubs.dtd">Ficheiro DTD gerado automaticamente a partir do ficheiro xml fornecido</a></li>
+      
+      <li><a href="../XML2TTL/jrcpubsInicial.ttl">Ficheiro TTL Inicialmente Criado</a></li>
+      
+      <li><a href="../XML2TTL/xml2ttl.xsl">Ficheiro XSLT </a></li>  
+      
+      <li><a href="../XML2TTL/pubsGerado.ttl">Ficheiro TTL gerado através de uma stylesheet XSLT</a></li>  
+      
+      <li><a href="../XML2TTL/final.ttl">Ficheiro TTL Final</a></li>
+      
+      <li><a href="../XML2TTL/pubsToOntobud2.rdf">Ficheiro RDF necessário para o carregamento da ontologia no Ontobud</a></li>
+      
+      
+      <hr>
+      </body>
+</html>
