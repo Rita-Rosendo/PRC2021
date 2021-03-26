@@ -4,7 +4,7 @@
     <meta>
         <key>PRC_2021_TPC5</key>
         <title>JCR_PUBS</title>
-        <bdate>25-03-2021</bdate>
+        <bdate>24-03-2021</bdate>
         <edate>26-03-2021</edate>
         <supervisor url="http://www4.di.uminho.pt/~jcr/"> José Carlos Ramalho </supervisor>
     </meta>
@@ -30,6 +30,9 @@
         <p>
             Em quarto lugar, carregou-se a ontologia no <b>Ontobud</b> criando um repositório novo denominado <b>A84475-TP5</b> e importou-se o ficheiro gerado no ponto anterior.
         </p>
+        <p>
+            Por fim, criou-se uma API de dados e implementou-se as seguintes rotas: GET /pubs, GET /pubs/{id}, GET /authors, GET /authors/{id}.
+        </p>
     </abstract>
     <deliverables>
         <link url="./pr.dtd">Project Record - DTD</link>
@@ -43,6 +46,8 @@
         <link url="../XML2TTL/pubsGerado.ttl">Ficheiro TTL gerado através de uma stylesheet XSLT</link>  
         <link url="../XML2TTL/final.ttl">Ficheiro TTL Final</link>
         <link url="../XML2TTL/pubsToOntobud2.rdf">Ficheiro RDF necessário para o carregamento da ontologia no Ontobud</link>
+        <link url="../tpc5/routes/index.js">Rotas Criadas</link>
+        
         
     </deliverables>
 </pr>
