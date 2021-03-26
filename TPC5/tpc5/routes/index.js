@@ -58,24 +58,6 @@ router.get('/pubs/:id', function (req, res, next){
       })
 })
 
-
-router.get('/pubs?type=(Bibliography|Article|Inproceedings|Inbook|Masterthesis|Misc|Phdthesis|Book|Proceedings)', function (req, res, next){
-
-  var query = 'select ?s where {?s a :'+req.params[0]+' .}'
-
-  var encoded = encodeURIComponent(prefixes + query)
-  axios.get(getLink + encoded)
-     .then(dados => {
-        var tipos = dados.data.results.bindings.map(bind => {return {
-              s: bind.s.value.split('#')[1],
-        }});
-          res.status(200).jsonp(tipos);
-      })
-      .catch(err => {
-        res.status(500).jsonp(err);
-      })
-})
-
 router.get('/authors', function (req, res, next){
 
   var query = `select ?name (group_concat(?o;SEPARATOR="  ,  ") as ?publicacoes)
