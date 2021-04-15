@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/aninhas/Desktop/2020_2021/PLC/2Semestre/PRC/TPCs/TPC1/PR/pr.dtd">
+<pr>
+    <meta>
+        <key>PRC_2021_TPC6</key>
+        <title>App Vue</title>
+        <bdate>15-04-2021</bdate>
+        <edate>15-04-2021</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/"> José Carlos Ramalho </supervisor>
+    </meta>
+    <workteam>
+        <worker number="A84475">
+            <name>Ana Rita Miranda Rosendo</name>
+            <email>a84475@alunos.uminho.pt</email>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            Foi-nos proposta a realização de um trabalho de casa que tem como objetivo criar uma App em <b>Vue</b> para consumir a API de dados criada no tpc anterior, o TPC5.
+        </p>
+        <p>
+            Em primeiro lugar, fez-se a listagem de publicações. Como, neste caso, foi-nos dito que os elementos que deveriam ser listados eram o id, o tipo, o título e o ano de pulblicação, foi
+         necessário modificar a query do GET das publicações na API de dados.
+        </p>
+        <p>
+            De seguida, fez-se a listagem dos autores. Novamente, como os elementos que deveriam ser listados são o id, o nome e o número de publicações, a query relativa ao GET dos autores no lado da API de dados 
+         foi modificada.
+        </p>
+        <p>
+            Posteriormente, implementou-se a opção de ao clicar no ID de uma publicação, quando se está na página da lista de publicações, ir para a consulta da publicação onde a informação acerca da mesma é listada.
+        </p>
+        <p>
+            Por fim, implementou-se a opção de ao clicar no número de publicações de um autor, quando se está na página da lista de autores, ir para a consulta do autor onde a informação acerca do mesmo é listada. Para além disso, 
+        é também possível clicar nas publicações que o mesmo fez e visualizar a informação acerca dessa publicação.
+        </p>
+       
+    </abstract>
+    <deliverables>
+        <link url="./pr.dtd">Project Record - DTD</link>
+        <link url="./pr.xml">Project Record - XML</link>
+        <link url="./pr.xsl">Project Record - XSL</link>
+        <link url="./pr.html">Project Record - HTML</link>
+        <link url="../tpc5/routes/index.js">Mudanças nas Rotas criadas no TPC anterior</link>
+        <link url="../tpc6">App em Vue</link>
+        
+        
+    </deliverables>
+</pr>
+
