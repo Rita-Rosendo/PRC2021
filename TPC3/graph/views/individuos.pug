@@ -1,0 +1,11 @@
+extends layout
+block content
+    header
+        h3(style='color:purple') Indivíduos
+
+        ul 
+            each c in individuos
+                <li>
+                    button(class="btn btn-small" onclick="location.href='http://localhost:7701/repositorios/" + c.id + "/classes/" + c.classe + "/individuos/" + c.individuo + "?pref=" + c.prefixo + "'" type="button") #{c.individuo}
+                </li>
+        

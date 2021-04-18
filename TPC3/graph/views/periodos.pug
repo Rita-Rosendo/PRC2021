@@ -1,0 +1,12 @@
+extends layout
+block content
+    table(class="w3-table-all")
+        thead
+            tr
+                th Período
+                th Número
+        tbody
+            each p in periodos
+                tr
+                    td=p.id
+                    td=p.numero

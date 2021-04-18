@@ -1,0 +1,36 @@
+extends layout
+block content
+    header
+        h3(style='color:purple') Lista dos repositórios 
+
+        table(style='width:100%', border='1')
+            thead
+                tr(style='color:pink')
+                    th ID
+                    th Title
+                    th URI
+                    th ExternalUrl
+                    th Local
+                    th Type
+                    th SesameType
+                    th Location
+                    th Readable
+                    th Writable
+                    th Unsupported
+                    th State
+            tbody
+                each r in repositorios
+                    tr
+                        td
+                             button(class="btn btn-small" onclick="location.href='http://localhost:7701/repositorios/" + r.id + "'" type="button") #{r.id}
+                        td=r.title
+                        td=r.uri
+                        td=r.externalUrl
+                        td=r.local
+                        td=r.type
+                        td=r.sesameType
+                        td=r.location
+                        td=r.readable
+                        td=r.writable
+                        td=r.unsupported
+                        td=r.state

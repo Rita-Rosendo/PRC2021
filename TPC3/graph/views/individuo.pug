@@ -1,0 +1,16 @@
+extends layout
+block content
+    header
+        h3(style='color:purple') Informação acerca do Indivíduo 
+
+        table(style='width:100%', border='1')
+            thead
+                tr(style='color:pink')
+                    th Predicado
+                    th Objecto
+
+            tbody
+                each i in individuo
+                    tr
+                        td=i.p
+                        td=i.o

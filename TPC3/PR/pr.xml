@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/aninhas/Desktop/2020_2021/PLC/2Semestre/PRC/TPCs/TPC1/PR/pr.dtd">
+<pr>
+    <meta>
+        <key>PRC_2021_TPC3</key>
+        <title>Front-End Web</title>
+        <bdate>19-04-2021</bdate>
+        <edate>19-04-2021</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/"> José Carlos Ramalho </supervisor>
+    </meta>
+    <workteam>
+        <worker number="A84475">
+            <name>Ana Rita Miranda Rosendo</name>
+            <email>a84475@alunos.uminho.pt</email>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            Foi-nos proposta a realização de um trabalho de casa que tem como objetivo o desenvolvimento de um Front-End Web para mostrar a informação que está presente no <b>GraphDB</b>.
+            Para tal, foi utilizada a framework Express.
+        </p>
+        <p>
+            Na primeira página encontra-se a lista de repositórios disponíveis assim como alguma informação acerca dos mesmos. Em cada repositório, no campo do ID, é possível
+            clicar e ser direcionado para a página desse repositório.
+        </p>
+        <p>
+            Na página de cada repositório encontra-se a lista das suas classes. E, tal como acontece com cada repositório, ao clicar numa classe, o utilizador
+            é dirigido para a página dos indivíduos da classe.
+        </p>
+        <p>
+            Por sua vez, na página da lista dos indivíduos da classe, sempre que o utilizador clica num indivíduo este é direcionado para a página do invidíduo em questão
+            onde se pode observar as propriedades do indivíduo clicado.
+        </p>
+    </abstract>
+    <deliverables>
+        <link url="./pr.dtd">Project Record - DTD</link>
+        <link url="./pr.xml">Project Record - XML</link>
+        <link url="./pr.xsl">Project Record - XSL</link>
+        <link url="./pr.html">Project Record - HTML</link>      
+        <link url="../graph/">Front-End </link>
+    </deliverables>
+</pr>
