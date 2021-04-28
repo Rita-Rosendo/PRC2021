@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/aninhas/Desktop/2020_2021/PLC/2Semestre/PRC/TPCs/TPC1/PR/pr.dtd">
+<pr>
+    <meta>
+        <key>PRC_2021_TPC8</key>
+        <title>Povoação de uma Ontologia</title>
+        <bdate>28-04-2021</bdate>
+        <edate>28-04-2021</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/"> José Carlos Ramalho </supervisor>
+    </meta>
+    <workteam>
+        <worker number="A84475">
+            <name>Ana Rita Miranda Rosendo</name>
+            <email>a84475@alunos.uminho.pt</email>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            Foi-nos proposta a realização de um trabalho de casa que tem como objetivo criar uma <b>Ontologia</b> a partir de um dataset em json disponibilizado na aula.
+        </p>
+        <p>
+            Primeiramente, analisou-se o dataset em json "mapa_virtual.json" e criou-se uma ontologia estrutural no <b>Protégé</b>.
+        </p>
+        <p>
+            De seguida, usando a linguagem de programação <b>Python</b>, gerou-se ficheiros em ttl com os indivíduos necessários para povoar a ontologia inicialmente criada.
+        </p>
+        <p>
+            Por fim, juntou-se ao ficheiro ttl que contém a ontologia estrutural inicial, a informação contida nos ficheiros criados com o script em python povoando-se assim a ontologia.
+        </p>
+    </abstract>
+    <deliverables>
+        <link url="./pr.dtd">Project Record - DTD</link>
+        <link url="./pr.xml">Project Record - XML</link>
+        <link url="./pr.xsl">Project Record - XSL</link>
+        <link url="./pr.html">Project Record - HTML</link>
+        <link url="../tpc8/mapa_virtual.json">Dataset Mapa Virtual</link>
+        <link url="../tpc8/ontologiaEstrutural.ttl">Ontologia estrutural inicial</link>
+        <link url="../tpc8/geraOntIndividuos.py">Script em Python</link>
+        <link url="../tpc8/Cidades.ttl">Ficheiro gerado pelo script em Python</link>
+        <link url="../tpc8/Ligacoes.ttl">Ficheiro gerado pelo script em Python</link>
+        <link url="../tpc8/ontologiaFinal.ttl">Ontologia final povoada</link>
+        
+        
+    </deliverables>
+</pr>
+
