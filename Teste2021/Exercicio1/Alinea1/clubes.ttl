@@ -1,0 +1,41 @@
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#GDGoma
+:GDGoma rdf:type owl:NamedIndividual ,
+			:Clube.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#AVCfamalicão
+:AVCfamalicão rdf:type owl:NamedIndividual ,
+			:Clube.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#ABCbraga
+:ABCbraga rdf:type owl:NamedIndividual ,
+			:Clube.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Clube_de_Orientação_do_Minho
+:Clube_de_Orientação_do_Minho rdf:type owl:NamedIndividual ,
+			:Clube.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#SCBraga
+:SCBraga rdf:type owl:NamedIndividual ,
+			:Clube.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#ACDRcrespos
+:ACDRcrespos rdf:type owl:NamedIndividual ,
+			:Clube.
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#ACRroriz
+:ACRroriz rdf:type owl:NamedIndividual ,
+			:Clube.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Vitoria
+:Vitoria rdf:type owl:NamedIndividual ,
+			:Clube.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#AmigosMontanha
+:AmigosMontanha rdf:type owl:NamedIndividual ,
+			:Clube.
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#EDViana
+:EDViana rdf:type owl:NamedIndividual ,
+			:Clube.

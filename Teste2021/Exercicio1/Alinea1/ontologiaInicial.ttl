@@ -1,0 +1,5327 @@
+@prefix : <http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs> .
+
+<http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#eClubeDe
+:eClubeDe rdf:type owl:ObjectProperty ;
+          owl:inverseOf :temClube .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#eModalidadeDe
+:eModalidadeDe rdf:type owl:ObjectProperty ;
+               owl:inverseOf :temModalidade .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#temClube
+:temClube rdf:type owl:ObjectProperty ;
+          rdfs:domain :Atleta ;
+          rdfs:range :Clube .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#temModalidade
+:temModalidade rdf:type owl:ObjectProperty ;
+               rdfs:domain :Atleta ;
+               rdfs:range :Modalidade .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#_id
+:_id rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#dataEMD
+:dataEMD rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#email
+:email rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#federado
+:federado rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#genero
+:genero rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#idade
+:idade rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#index
+:index rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#morada
+:morada rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#primeiroNome
+:primeiroNome rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#resultado
+:resultado rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#ultimoNome
+:ultimoNome rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Atleta
+:Atleta rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Clube
+:Clube rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#EMD
+:EMD rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Modalidade
+:Modalidade rdf:type owl:Class .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Futebol
+:Futebol rdf:type owl:NamedIndividual ,
+      :Modalidade.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Triatlo
+:Triatlo rdf:type owl:NamedIndividual ,
+      :Modalidade.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Badminton
+:Badminton rdf:type owl:NamedIndividual ,
+      :Modalidade.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Ciclismo
+:Ciclismo rdf:type owl:NamedIndividual ,
+      :Modalidade.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Patinagem
+:Patinagem rdf:type owl:NamedIndividual ,
+      :Modalidade.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Parapente
+:Parapente rdf:type owl:NamedIndividual ,
+      :Modalidade.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Orientação
+:Orientação rdf:type owl:NamedIndividual ,
+      :Modalidade.
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Esgrima
+:Esgrima rdf:type owl:NamedIndividual ,
+      :Modalidade.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#BTT
+:BTT rdf:type owl:NamedIndividual ,
+      :Modalidade.
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Atletismo
+:Atletismo rdf:type owl:NamedIndividual ,
+      :Modalidade.
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#SUP
+:SUP rdf:type owl:NamedIndividual ,
+      :Modalidade.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Basquetebol
+:Basquetebol rdf:type owl:NamedIndividual ,
+      :Modalidade.
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Karaté
+:Karaté rdf:type owl:NamedIndividual ,
+      :Modalidade.
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Dança
+:Dança rdf:type owl:NamedIndividual ,
+      :Modalidade.
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Andebol
+:Andebol rdf:type owl:NamedIndividual ,
+      :Modalidade.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Equitação
+:Equitação rdf:type owl:NamedIndividual ,
+      :Modalidade.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Ténis
+:Ténis rdf:type owl:NamedIndividual ,
+      :Modalidade.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#GDGoma
+:GDGoma rdf:type owl:NamedIndividual ,
+      :Clube.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#AVCfamalicão
+:AVCfamalicão rdf:type owl:NamedIndividual ,
+      :Clube.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#ABCbraga
+:ABCbraga rdf:type owl:NamedIndividual ,
+      :Clube.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Clube_de_Orientação_do_Minho
+:Clube_de_Orientação_do_Minho rdf:type owl:NamedIndividual ,
+      :Clube.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#SCBraga
+:SCBraga rdf:type owl:NamedIndividual ,
+      :Clube.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#ACDRcrespos
+:ACDRcrespos rdf:type owl:NamedIndividual ,
+      :Clube.
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#ACRroriz
+:ACRroriz rdf:type owl:NamedIndividual ,
+      :Clube.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Vitoria
+:Vitoria rdf:type owl:NamedIndividual ,
+      :Clube.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#AmigosMontanha
+:AmigosMontanha rdf:type owl:NamedIndividual ,
+      :Clube.
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#EDViana
+:EDViana rdf:type owl:NamedIndividual ,
+      :Clube.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ee00725274024d5a2
+:a60b3ee0ee00725274024d5a2 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :GDGoma ;
+:temModalidade :Futebol ;
+:primeiroNome "Emily" ;
+:segundoNome "Terrell" ;
+:_id "60b3ee0ee00725274024d5a2" ;
+:dataEMD "2020-07-27" ;
+:email "emily.terrell@gdgoma.org" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 28 ;
+:index 0 ;
+:morada "Clay" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e62b59d062f2018a3
+:a60b3ee0e62b59d062f2018a3 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Triatlo ;
+:primeiroNome "Medina" ;
+:segundoNome "Hartman" ;
+:_id "60b3ee0e62b59d062f2018a3" ;
+:dataEMD "2019-01-17" ;
+:email "medina.hartman@avcfamalicão.name" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 34 ;
+:index 1 ;
+:morada "Orick" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e01ada8b23fc63b31
+:a60b3ee0e01ada8b23fc63b31 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Badminton ;
+:primeiroNome "Andrews" ;
+:segundoNome "Rivas" ;
+:_id "60b3ee0e01ada8b23fc63b31" ;
+:dataEMD "2020-04-09" ;
+:email "andrews.rivas@abcbraga.us" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 24 ;
+:index 2 ;
+:morada "Saticoy" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e6ab8471af29e2014
+:a60b3ee0e6ab8471af29e2014 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Ciclismo ;
+:primeiroNome "Marcella" ;
+:segundoNome "Combs" ;
+:_id "60b3ee0e6ab8471af29e2014" ;
+:dataEMD "2020-06-12" ;
+:email "marcella.combs@clube de orientação do minho.com" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 24 ;
+:index 3 ;
+:morada "Manila" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ed16d4695ffdf5f17
+:a60b3ee0ed16d4695ffdf5f17 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :Patinagem ;
+:primeiroNome "Mendoza" ;
+:segundoNome "Buckner" ;
+:_id "60b3ee0ed16d4695ffdf5f17" ;
+:dataEMD "2019-09-13" ;
+:email "mendoza.buckner@scbraga.ca" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 23 ;
+:index 4 ;
+:morada "Brogan" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e2707c21708cc3418
+:a60b3ee0e2707c21708cc3418 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Triatlo ;
+:primeiroNome "Sellers" ;
+:segundoNome "Copeland" ;
+:_id "60b3ee0e2707c21708cc3418" ;
+:dataEMD "2021-04-25" ;
+:email "sellers.copeland@clube de orientação do minho.net" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 28 ;
+:index 5 ;
+:morada "Spelter" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e4a1e0233af16ac8c
+:a60b3ee0e4a1e0233af16ac8c rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Badminton ;
+:primeiroNome "Bernard" ;
+:segundoNome "Stokes" ;
+:_id "60b3ee0e4a1e0233af16ac8c" ;
+:dataEMD "2020-12-29" ;
+:email "bernard.stokes@avcfamalicão.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 34 ;
+:index 6 ;
+:morada "Sussex" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ed5225a2a93a69c3a
+:a60b3ee0ed5225a2a93a69c3a rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Triatlo ;
+:primeiroNome "Alfreda" ;
+:segundoNome "Raymond" ;
+:_id "60b3ee0ed5225a2a93a69c3a" ;
+:dataEMD "2021-03-04" ;
+:email "alfreda.raymond@abcbraga.tv" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 30 ;
+:index 7 ;
+:morada "Sultana" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e9488e742d1600f58
+:a60b3ee0e9488e742d1600f58 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :Triatlo ;
+:primeiroNome "Alston" ;
+:segundoNome "Green" ;
+:_id "60b3ee0e9488e742d1600f58" ;
+:dataEMD "2021-05-29" ;
+:email "alston.green@scbraga.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 29 ;
+:index 8 ;
+:morada "Thornport" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ef8b2c3b732bc0d82
+:a60b3ee0ef8b2c3b732bc0d82 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Parapente ;
+:primeiroNome "Paige" ;
+:segundoNome "Mccarthy" ;
+:_id "60b3ee0ef8b2c3b732bc0d82" ;
+:dataEMD "2019-10-27" ;
+:email "paige.mccarthy@acdrcrespos.co.uk" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 32 ;
+:index 9 ;
+:morada "Brandywine" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ec14a4ad7e917ed36
+:a60b3ee0ec14a4ad7e917ed36 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Orientação ;
+:primeiroNome "Claudine" ;
+:segundoNome "Gill" ;
+:_id "60b3ee0ec14a4ad7e917ed36" ;
+:dataEMD "2020-08-09" ;
+:email "claudine.gill@acrroriz.me" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 33 ;
+:index 10 ;
+:morada "Katonah" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ecf1638e25755912c
+:a60b3ee0ecf1638e25755912c rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Esgrima ;
+:primeiroNome "Summer" ;
+:segundoNome "Calhoun" ;
+:_id "60b3ee0ecf1638e25755912c" ;
+:dataEMD "2019-12-03" ;
+:email "summer.calhoun@clube de orientação do minho.info" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 26 ;
+:index 11 ;
+:morada "National" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e2fac3611c3cd7291
+:a60b3ee0e2fac3611c3cd7291 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :BTT ;
+:primeiroNome "Slater" ;
+:segundoNome "David" ;
+:_id "60b3ee0e2fac3611c3cd7291" ;
+:dataEMD "2020-01-22" ;
+:email "slater.david@vitoria.org" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 25 ;
+:index 12 ;
+:morada "Chicopee" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e1f3d25c518678bd7
+:a60b3ee0e1f3d25c518678bd7 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Atletismo ;
+:primeiroNome "Ophelia" ;
+:segundoNome "Boyd" ;
+:_id "60b3ee0e1f3d25c518678bd7" ;
+:dataEMD "2020-09-03" ;
+:email "ophelia.boyd@amigosmontanha.name" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 21 ;
+:index 13 ;
+:morada "Chaparrito" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ee62c8f8a846459ea
+:a60b3ee0ee62c8f8a846459ea rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Orientação ;
+:primeiroNome "Evans" ;
+:segundoNome "Singleton" ;
+:_id "60b3ee0ee62c8f8a846459ea" ;
+:dataEMD "2019-08-02" ;
+:email "evans.singleton@clube de orientação do minho.us" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 25 ;
+:index 14 ;
+:morada "Sunwest" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e0539642b38645cb3
+:a60b3ee0e0539642b38645cb3 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :Orientação ;
+:primeiroNome "Church" ;
+:segundoNome "Bishop" ;
+:_id "60b3ee0e0539642b38645cb3" ;
+:dataEMD "2020-08-07" ;
+:email "church.bishop@vitoria.com" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 28 ;
+:index 15 ;
+:morada "Vallonia" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e3f327a6ba71f77b0
+:a60b3ee0e3f327a6ba71f77b0 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :SUP ;
+:primeiroNome "Woodard" ;
+:segundoNome "Bennett" ;
+:_id "60b3ee0e3f327a6ba71f77b0" ;
+:dataEMD "2019-07-13" ;
+:email "woodard.bennett@edviana.ca" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 33 ;
+:index 16 ;
+:morada "Ruckersville" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e30fc3c2042f955eb
+:a60b3ee0e30fc3c2042f955eb rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :Basquetebol ;
+:primeiroNome "Vasquez" ;
+:segundoNome "Michael" ;
+:_id "60b3ee0e30fc3c2042f955eb" ;
+:dataEMD "2019-09-15" ;
+:email "vasquez.michael@vitoria.net" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 27 ;
+:index 17 ;
+:morada "Munjor" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ee90bdefcc8703185
+:a60b3ee0ee90bdefcc8703185 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Ciclismo ;
+:primeiroNome "Holloway" ;
+:segundoNome "Maxwell" ;
+:_id "60b3ee0ee90bdefcc8703185" ;
+:dataEMD "2019-09-04" ;
+:email "holloway.maxwell@avcfamalicão.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 30 ;
+:index 18 ;
+:morada "Waikele" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e559fb2fd0142f64c
+:a60b3ee0e559fb2fd0142f64c rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Karaté ;
+:primeiroNome "Michele" ;
+:segundoNome "Barber" ;
+:_id "60b3ee0e559fb2fd0142f64c" ;
+:dataEMD "2020-02-04" ;
+:email "michele.barber@clube de orientação do minho.tv" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 27 ;
+:index 19 ;
+:morada "Oberlin" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0eb2087f8cccef830d
+:a60b3ee0eb2087f8cccef830d rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :SUP ;
+:primeiroNome "Chambers" ;
+:segundoNome "Burton" ;
+:_id "60b3ee0eb2087f8cccef830d" ;
+:dataEMD "2020-03-01" ;
+:email "chambers.burton@vitoria.biz" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 25 ;
+:index 20 ;
+:morada "Boling" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ea0dc6768a6ca7192
+:a60b3ee0ea0dc6768a6ca7192 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :BTT ;
+:primeiroNome "Massey" ;
+:segundoNome "Goodman" ;
+:_id "60b3ee0ea0dc6768a6ca7192" ;
+:dataEMD "2021-03-26" ;
+:email "massey.goodman@amigosmontanha.co.uk" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 32 ;
+:index 21 ;
+:morada "Garfield" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ee3d27702cac0b7cd
+:a60b3ee0ee3d27702cac0b7cd rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :Futebol ;
+:primeiroNome "Klein" ;
+:segundoNome "Cameron" ;
+:_id "60b3ee0ee3d27702cac0b7cd" ;
+:dataEMD "2021-02-26" ;
+:email "klein.cameron@scbraga.me" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 30 ;
+:index 22 ;
+:morada "Twilight" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e23a38b2da3f0a76e
+:a60b3ee0e23a38b2da3f0a76e rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Basquetebol ;
+:primeiroNome "Lambert" ;
+:segundoNome "Mueller" ;
+:_id "60b3ee0e23a38b2da3f0a76e" ;
+:dataEMD "2020-07-11" ;
+:email "lambert.mueller@acdrcrespos.info" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 25 ;
+:index 23 ;
+:morada "Oretta" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e172e761f8d52c213
+:a60b3ee0e172e761f8d52c213 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Ciclismo ;
+:primeiroNome "Ewing" ;
+:segundoNome "Drake" ;
+:_id "60b3ee0e172e761f8d52c213" ;
+:dataEMD "2021-02-15" ;
+:email "ewing.drake@acdrcrespos.org" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 21 ;
+:index 24 ;
+:morada "Nanafalia" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e2573d42d411cc591
+:a60b3ee0e2573d42d411cc591 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Dança ;
+:primeiroNome "Lester" ;
+:segundoNome "Manning" ;
+:_id "60b3ee0e2573d42d411cc591" ;
+:dataEMD "2019-01-04" ;
+:email "lester.manning@acdrcrespos.name" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 35 ;
+:index 25 ;
+:morada "Grandview" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ee95a95d0c9bc3e5f
+:a60b3ee0ee95a95d0c9bc3e5f rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Futebol ;
+:primeiroNome "Nina" ;
+:segundoNome "Fowler" ;
+:_id "60b3ee0ee95a95d0c9bc3e5f" ;
+:dataEMD "2020-04-16" ;
+:email "nina.fowler@amigosmontanha.us" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 30 ;
+:index 26 ;
+:morada "Turah" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0effaf9b013df4203d
+:a60b3ee0effaf9b013df4203d rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :SUP ;
+:primeiroNome "Lynn" ;
+:segundoNome "Shaw" ;
+:_id "60b3ee0effaf9b013df4203d" ;
+:dataEMD "2020-07-25" ;
+:email "lynn.shaw@clube de orientação do minho.com" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 26 ;
+:index 27 ;
+:morada "Cutter" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ee3f58fda00f17cc6
+:a60b3ee0ee3f58fda00f17cc6 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Badminton ;
+:primeiroNome "Betty" ;
+:segundoNome "Blake" ;
+:_id "60b3ee0ee3f58fda00f17cc6" ;
+:dataEMD "2021-01-13" ;
+:email "betty.blake@abcbraga.ca" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 25 ;
+:index 28 ;
+:morada "Teasdale" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ee7cb2701483df2c9
+:a60b3ee0ee7cb2701483df2c9 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :Andebol ;
+:primeiroNome "Oneill" ;
+:segundoNome "Roth" ;
+:_id "60b3ee0ee7cb2701483df2c9" ;
+:dataEMD "2020-10-23" ;
+:email "oneill.roth@edviana.net" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 25 ;
+:index 29 ;
+:morada "Graball" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e74703dea724376f8
+:a60b3ee0e74703dea724376f8 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :Badminton ;
+:primeiroNome "Roxanne" ;
+:segundoNome "Miles" ;
+:_id "60b3ee0e74703dea724376f8" ;
+:dataEMD "2019-06-03" ;
+:email "roxanne.miles@vitoria.biz" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 26 ;
+:index 30 ;
+:morada "Haring" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ef3bfaf77b4e67849
+:a60b3ee0ef3bfaf77b4e67849 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Futebol ;
+:primeiroNome "Cecelia" ;
+:segundoNome "Adams" ;
+:_id "60b3ee0ef3bfaf77b4e67849" ;
+:dataEMD "2019-04-20" ;
+:email "cecelia.adams@amigosmontanha.tv" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 28 ;
+:index 31 ;
+:morada "Fairlee" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e54b12900f5e6c314
+:a60b3ee0e54b12900f5e6c314 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :Atletismo ;
+:primeiroNome "Irma" ;
+:segundoNome "Jacobs" ;
+:_id "60b3ee0e54b12900f5e6c314" ;
+:dataEMD "2019-12-12" ;
+:email "irma.jacobs@edviana.biz" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 27 ;
+:index 32 ;
+:morada "Driftwood" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ef050e91efe68a668
+:a60b3ee0ef050e91efe68a668 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :Orientação ;
+:primeiroNome "Angelia" ;
+:segundoNome "Noel" ;
+:_id "60b3ee0ef050e91efe68a668" ;
+:dataEMD "2020-12-23" ;
+:email "angelia.noel@edviana.co.uk" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 34 ;
+:index 33 ;
+:morada "Martell" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e536b83d9d562f9c8
+:a60b3ee0e536b83d9d562f9c8 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Ciclismo ;
+:primeiroNome "Sallie" ;
+:segundoNome "Shaffer" ;
+:_id "60b3ee0e536b83d9d562f9c8" ;
+:dataEMD "2020-06-02" ;
+:email "sallie.shaffer@clube de orientação do minho.me" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 24 ;
+:index 34 ;
+:morada "Brownlee" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e6dbcbe60effe125d
+:a60b3ee0e6dbcbe60effe125d rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :SUP ;
+:primeiroNome "Jordan" ;
+:segundoNome "Bonner" ;
+:_id "60b3ee0e6dbcbe60effe125d" ;
+:dataEMD "2020-06-22" ;
+:email "jordan.bonner@vitoria.info" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 33 ;
+:index 35 ;
+:morada "Northchase" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e8b4f7dca2601ddfc
+:a60b3ee0e8b4f7dca2601ddfc rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :GDGoma ;
+:temModalidade :Atletismo ;
+:primeiroNome "Bartlett" ;
+:segundoNome "Sexton" ;
+:_id "60b3ee0e8b4f7dca2601ddfc" ;
+:dataEMD "2019-12-17" ;
+:email "bartlett.sexton@gdgoma.org" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 33 ;
+:index 36 ;
+:morada "Rehrersburg" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e59411e4e9d97d70a
+:a60b3ee0e59411e4e9d97d70a rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Basquetebol ;
+:primeiroNome "Opal" ;
+:segundoNome "Stewart" ;
+:_id "60b3ee0e59411e4e9d97d70a" ;
+:dataEMD "2019-07-27" ;
+:email "opal.stewart@avcfamalicão.name" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 30 ;
+:index 37 ;
+:morada "Dola" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ee78616dd040e4dca
+:a60b3ee0ee78616dd040e4dca rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Equitação ;
+:primeiroNome "Ola" ;
+:segundoNome "Glover" ;
+:_id "60b3ee0ee78616dd040e4dca" ;
+:dataEMD "2020-11-26" ;
+:email "ola.glover@clube de orientação do minho.us" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 34 ;
+:index 38 ;
+:morada "Barronett" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ea3043984230726fc
+:a60b3ee0ea3043984230726fc rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :Orientação ;
+:primeiroNome "Shelia" ;
+:segundoNome "York" ;
+:_id "60b3ee0ea3043984230726fc" ;
+:dataEMD "2019-11-21" ;
+:email "shelia.york@scbraga.com" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 21 ;
+:index 39 ;
+:morada "Escondida" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e242cedae88a5f12c
+:a60b3ee0e242cedae88a5f12c rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Patinagem ;
+:primeiroNome "Raquel" ;
+:segundoNome "Ratliff" ;
+:_id "60b3ee0e242cedae88a5f12c" ;
+:dataEMD "2019-07-31" ;
+:email "raquel.ratliff@abcbraga.ca" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 33 ;
+:index 40 ;
+:morada "Goldfield" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e846df12b8f8e750d
+:a60b3ee0e846df12b8f8e750d rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Parapente ;
+:primeiroNome "Burke" ;
+:segundoNome "Weeks" ;
+:_id "60b3ee0e846df12b8f8e750d" ;
+:dataEMD "2019-09-14" ;
+:email "burke.weeks@amigosmontanha.net" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 29 ;
+:index 41 ;
+:morada "Mapletown" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e3f165afa6f23a0eb
+:a60b3ee0e3f165afa6f23a0eb rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :GDGoma ;
+:temModalidade :Ciclismo ;
+:primeiroNome "Best" ;
+:segundoNome "French" ;
+:_id "60b3ee0e3f165afa6f23a0eb" ;
+:dataEMD "2019-04-30" ;
+:email "best.french@gdgoma.biz" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 33 ;
+:index 42 ;
+:morada "Longbranch" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e0ee0185da196c9ab
+:a60b3ee0e0ee0185da196c9ab rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Esgrima ;
+:primeiroNome "Fowler" ;
+:segundoNome "Alvarez" ;
+:_id "60b3ee0e0ee0185da196c9ab" ;
+:dataEMD "2019-10-08" ;
+:email "fowler.alvarez@amigosmontanha.tv" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 31 ;
+:index 43 ;
+:morada "Choctaw" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ecfbe9bf6149ba53b
+:a60b3ee0ecfbe9bf6149ba53b rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Esgrima ;
+:primeiroNome "Terri" ;
+:segundoNome "Avila" ;
+:_id "60b3ee0ecfbe9bf6149ba53b" ;
+:dataEMD "2020-03-16" ;
+:email "terri.avila@avcfamalicão.biz" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 22 ;
+:index 44 ;
+:morada "Crown" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e84beb8fe0be593a5
+:a60b3ee0e84beb8fe0be593a5 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Badminton ;
+:primeiroNome "Alford" ;
+:segundoNome "Small" ;
+:_id "60b3ee0e84beb8fe0be593a5" ;
+:dataEMD "2019-10-14" ;
+:email "alford.small@avcfamalicão.co.uk" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 32 ;
+:index 45 ;
+:morada "Alamo" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ebab436c1d23c2a84
+:a60b3ee0ebab436c1d23c2a84 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Ciclismo ;
+:primeiroNome "Key" ;
+:segundoNome "Arnold" ;
+:_id "60b3ee0ebab436c1d23c2a84" ;
+:dataEMD "2020-03-01" ;
+:email "key.arnold@amigosmontanha.me" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 27 ;
+:index 46 ;
+:morada "Orason" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e20e993d5010857a4
+:a60b3ee0e20e993d5010857a4 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :BTT ;
+:primeiroNome "Nguyen" ;
+:segundoNome "Diaz" ;
+:_id "60b3ee0e20e993d5010857a4" ;
+:dataEMD "2021-04-16" ;
+:email "nguyen.diaz@amigosmontanha.info" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 35 ;
+:index 47 ;
+:morada "Watchtower" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ee409ac878ba9b99b
+:a60b3ee0ee409ac878ba9b99b rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Atletismo ;
+:primeiroNome "Sherry" ;
+:segundoNome "Morales" ;
+:_id "60b3ee0ee409ac878ba9b99b" ;
+:dataEMD "2021-04-04" ;
+:email "sherry.morales@avcfamalicão.org" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 26 ;
+:index 48 ;
+:morada "Waukeenah" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ed7a60ecd07dadb9e
+:a60b3ee0ed7a60ecd07dadb9e rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :BTT ;
+:primeiroNome "Crane" ;
+:segundoNome "Ballard" ;
+:_id "60b3ee0ed7a60ecd07dadb9e" ;
+:dataEMD "2019-09-11" ;
+:email "crane.ballard@vitoria.name" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 25 ;
+:index 49 ;
+:morada "Fedora" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e07cb41f968328e60
+:a60b3ee0e07cb41f968328e60 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :Karaté ;
+:primeiroNome "Terry" ;
+:segundoNome "Chaney" ;
+:_id "60b3ee0e07cb41f968328e60" ;
+:dataEMD "2020-07-11" ;
+:email "terry.chaney@scbraga.us" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 23 ;
+:index 50 ;
+:morada "Blanco" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ee48920a886a461e2
+:a60b3ee0ee48920a886a461e2 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Karaté ;
+:primeiroNome "Sheppard" ;
+:segundoNome "Bryant" ;
+:_id "60b3ee0ee48920a886a461e2" ;
+:dataEMD "2019-03-04" ;
+:email "sheppard.bryant@avcfamalicão.com" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 23 ;
+:index 51 ;
+:morada "Brandermill" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e79c5349b29557a62
+:a60b3ee0e79c5349b29557a62 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :BTT ;
+:primeiroNome "Janis" ;
+:segundoNome "Mckinney" ;
+:_id "60b3ee0e79c5349b29557a62" ;
+:dataEMD "2020-11-03" ;
+:email "janis.mckinney@abcbraga.ca" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 28 ;
+:index 52 ;
+:morada "Osage" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e3bffb9b3df6f5ea4
+:a60b3ee0e3bffb9b3df6f5ea4 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :Andebol ;
+:primeiroNome "Sue" ;
+:segundoNome "Waters" ;
+:_id "60b3ee0e3bffb9b3df6f5ea4" ;
+:dataEMD "2020-05-10" ;
+:email "sue.waters@vitoria.net" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 32 ;
+:index 53 ;
+:morada "Carrizo" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e03c621784bf7b2eb
+:a60b3ee0e03c621784bf7b2eb rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Equitação ;
+:primeiroNome "Cynthia" ;
+:segundoNome "Page" ;
+:_id "60b3ee0e03c621784bf7b2eb" ;
+:dataEMD "2019-05-30" ;
+:email "cynthia.page@acrroriz.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 22 ;
+:index 54 ;
+:morada "Forestburg" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ea96d47b79642735d
+:a60b3ee0ea96d47b79642735d rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :Atletismo ;
+:primeiroNome "Montgomery" ;
+:segundoNome "Rhodes" ;
+:_id "60b3ee0ea96d47b79642735d" ;
+:dataEMD "2019-10-14" ;
+:email "montgomery.rhodes@vitoria.tv" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 31 ;
+:index 55 ;
+:morada "Rivers" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e63cc2530b136daef
+:a60b3ee0e63cc2530b136daef rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Basquetebol ;
+:primeiroNome "Claire" ;
+:segundoNome "Joyce" ;
+:_id "60b3ee0e63cc2530b136daef" ;
+:dataEMD "2021-03-22" ;
+:email "claire.joyce@acdrcrespos.biz" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 25 ;
+:index 56 ;
+:morada "Belgreen" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e8a311b08fca3541b
+:a60b3ee0e8a311b08fca3541b rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Ciclismo ;
+:primeiroNome "Evangelina" ;
+:segundoNome "Key" ;
+:_id "60b3ee0e8a311b08fca3541b" ;
+:dataEMD "2021-04-16" ;
+:email "evangelina.key@acdrcrespos.co.uk" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 26 ;
+:index 57 ;
+:morada "Whitewater" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ea9b4c2114abcf6d7
+:a60b3ee0ea9b4c2114abcf6d7 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Andebol ;
+:primeiroNome "Effie" ;
+:segundoNome "Gibson" ;
+:_id "60b3ee0ea9b4c2114abcf6d7" ;
+:dataEMD "2020-11-24" ;
+:email "effie.gibson@acrroriz.me" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 33 ;
+:index 58 ;
+:morada "Virgie" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e16fc834f28234ef4
+:a60b3ee0e16fc834f28234ef4 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Patinagem ;
+:primeiroNome "Maureen" ;
+:segundoNome "Cobb" ;
+:_id "60b3ee0e16fc834f28234ef4" ;
+:dataEMD "2021-03-16" ;
+:email "maureen.cobb@amigosmontanha.info" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 24 ;
+:index 59 ;
+:morada "Venice" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0efe55045feaaea0d0
+:a60b3ee0efe55045feaaea0d0 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Parapente ;
+:primeiroNome "Dee" ;
+:segundoNome "Holman" ;
+:_id "60b3ee0efe55045feaaea0d0" ;
+:dataEMD "2020-11-22" ;
+:email "dee.holman@avcfamalicão.org" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 35 ;
+:index 60 ;
+:morada "Brenton" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e53dad18808565be7
+:a60b3ee0e53dad18808565be7 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :GDGoma ;
+:temModalidade :Andebol ;
+:primeiroNome "Larson" ;
+:segundoNome "Morin" ;
+:_id "60b3ee0e53dad18808565be7" ;
+:dataEMD "2019-02-13" ;
+:email "larson.morin@gdgoma.name" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 26 ;
+:index 61 ;
+:morada "Summerset" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e25015995bacd5bed
+:a60b3ee0e25015995bacd5bed rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Dança ;
+:primeiroNome "Ursula" ;
+:segundoNome "Martinez" ;
+:_id "60b3ee0e25015995bacd5bed" ;
+:dataEMD "2021-01-29" ;
+:email "ursula.martinez@amigosmontanha.us" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 32 ;
+:index 62 ;
+:morada "Lorraine" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ed8819374df399b72
+:a60b3ee0ed8819374df399b72 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :GDGoma ;
+:temModalidade :Basquetebol ;
+:primeiroNome "English" ;
+:segundoNome "Clemons" ;
+:_id "60b3ee0ed8819374df399b72" ;
+:dataEMD "2020-10-10" ;
+:email "english.clemons@gdgoma.com" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 30 ;
+:index 63 ;
+:morada "Ticonderoga" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e47a5478e9b66110d
+:a60b3ee0e47a5478e9b66110d rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Badminton ;
+:primeiroNome "Stella" ;
+:segundoNome "Jackson" ;
+:_id "60b3ee0e47a5478e9b66110d" ;
+:dataEMD "2020-10-28" ;
+:email "stella.jackson@acdrcrespos.ca" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 31 ;
+:index 64 ;
+:morada "Kaka" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0eddf26117e9d32bcb
+:a60b3ee0eddf26117e9d32bcb rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Ciclismo ;
+:primeiroNome "Haley" ;
+:segundoNome "Joseph" ;
+:_id "60b3ee0eddf26117e9d32bcb" ;
+:dataEMD "2019-05-01" ;
+:email "haley.joseph@avcfamalicão.net" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 28 ;
+:index 65 ;
+:morada "Brantleyville" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ebc5f8bcac6a4b89d
+:a60b3ee0ebc5f8bcac6a4b89d rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :Patinagem ;
+:primeiroNome "Kelsey" ;
+:segundoNome "Roberts" ;
+:_id "60b3ee0ebc5f8bcac6a4b89d" ;
+:dataEMD "2020-04-09" ;
+:email "kelsey.roberts@vitoria.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 28 ;
+:index 66 ;
+:morada "Morgandale" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e9f0c3dbf2ecc854f
+:a60b3ee0e9f0c3dbf2ecc854f rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :GDGoma ;
+:temModalidade :Dança ;
+:primeiroNome "Watson" ;
+:segundoNome "Lynch" ;
+:_id "60b3ee0e9f0c3dbf2ecc854f" ;
+:dataEMD "2019-06-26" ;
+:email "watson.lynch@gdgoma.tv" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 33 ;
+:index 67 ;
+:morada "Fillmore" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e6cb88f8d26691e15
+:a60b3ee0e6cb88f8d26691e15 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :Karaté ;
+:primeiroNome "Chasity" ;
+:segundoNome "Coffey" ;
+:_id "60b3ee0e6cb88f8d26691e15" ;
+:dataEMD "2021-05-14" ;
+:email "chasity.coffey@edviana.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 23 ;
+:index 68 ;
+:morada "Kersey" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e0797a9f03b138d18
+:a60b3ee0e0797a9f03b138d18 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :Dança ;
+:primeiroNome "Paula" ;
+:segundoNome "Delaney" ;
+:_id "60b3ee0e0797a9f03b138d18" ;
+:dataEMD "2021-02-26" ;
+:email "paula.delaney@edviana.co.uk" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 29 ;
+:index 69 ;
+:morada "Disautel" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e769aecb50db619f2
+:a60b3ee0e769aecb50db619f2 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Futebol ;
+:primeiroNome "Galloway" ;
+:segundoNome "Sanders" ;
+:_id "60b3ee0e769aecb50db619f2" ;
+:dataEMD "2019-06-27" ;
+:email "galloway.sanders@acrroriz.me" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 33 ;
+:index 70 ;
+:morada "Allendale" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e553355b77862ea98
+:a60b3ee0e553355b77862ea98 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :SUP ;
+:primeiroNome "Tina" ;
+:segundoNome "Blankenship" ;
+:_id "60b3ee0e553355b77862ea98" ;
+:dataEMD "2021-04-12" ;
+:email "tina.blankenship@acdrcrespos.info" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 33 ;
+:index 71 ;
+:morada "Longoria" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ee3bb3fd71f515d88
+:a60b3ee0ee3bb3fd71f515d88 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Parapente ;
+:primeiroNome "Whitehead" ;
+:segundoNome "Montgomery" ;
+:_id "60b3ee0ee3bb3fd71f515d88" ;
+:dataEMD "2021-04-11" ;
+:email "whitehead.montgomery@avcfamalicão.org" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 34 ;
+:index 72 ;
+:morada "Fairview" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ed5dd8522cc53e7b0
+:a60b3ee0ed5dd8522cc53e7b0 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Equitação ;
+:primeiroNome "Dominguez" ;
+:segundoNome "Chambers" ;
+:_id "60b3ee0ed5dd8522cc53e7b0" ;
+:dataEMD "2021-04-22" ;
+:email "dominguez.chambers@abcbraga.name" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 35 ;
+:index 73 ;
+:morada "Malott" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e28ab1329e2ed0888
+:a60b3ee0e28ab1329e2ed0888 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :Triatlo ;
+:primeiroNome "Booth" ;
+:segundoNome "Eaton" ;
+:_id "60b3ee0e28ab1329e2ed0888" ;
+:dataEMD "2019-05-23" ;
+:email "booth.eaton@scbraga.us" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 33 ;
+:index 74 ;
+:morada "Terlingua" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e7524108bf9936414
+:a60b3ee0e7524108bf9936414 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Parapente ;
+:primeiroNome "Joanna" ;
+:segundoNome "Grant" ;
+:_id "60b3ee0e7524108bf9936414" ;
+:dataEMD "2019-07-14" ;
+:email "joanna.grant@amigosmontanha.com" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 33 ;
+:index 75 ;
+:morada "Noblestown" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e59e86eaf9b9a5372
+:a60b3ee0e59e86eaf9b9a5372 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Orientação ;
+:primeiroNome "Jeri" ;
+:segundoNome "Pearson" ;
+:_id "60b3ee0e59e86eaf9b9a5372" ;
+:dataEMD "2019-03-28" ;
+:email "jeri.pearson@acrroriz.ca" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 29 ;
+:index 76 ;
+:morada "Falmouth" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e13085dc64e17e4b0
+:a60b3ee0e13085dc64e17e4b0 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Ciclismo ;
+:primeiroNome "Sanchez" ;
+:segundoNome "Mcgee" ;
+:_id "60b3ee0e13085dc64e17e4b0" ;
+:dataEMD "2021-05-13" ;
+:email "sanchez.mcgee@acdrcrespos.net" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 31 ;
+:index 77 ;
+:morada "Bascom" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e3d4f8a3a439f8b7a
+:a60b3ee0e3d4f8a3a439f8b7a rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Esgrima ;
+:primeiroNome "Magdalena" ;
+:segundoNome "Francis" ;
+:_id "60b3ee0e3d4f8a3a439f8b7a" ;
+:dataEMD "2019-12-02" ;
+:email "magdalena.francis@acdrcrespos.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 27 ;
+:index 78 ;
+:morada "Fostoria" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e6edaad4b8a63efae
+:a60b3ee0e6edaad4b8a63efae rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Badminton ;
+:primeiroNome "Morris" ;
+:segundoNome "Poole" ;
+:_id "60b3ee0e6edaad4b8a63efae" ;
+:dataEMD "2021-05-19" ;
+:email "morris.poole@avcfamalicão.tv" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 34 ;
+:index 79 ;
+:morada "Steinhatchee" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e538d62e10eba66b6
+:a60b3ee0e538d62e10eba66b6 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :GDGoma ;
+:temModalidade :Triatlo ;
+:primeiroNome "Rodriguez" ;
+:segundoNome "Gonzalez" ;
+:_id "60b3ee0e538d62e10eba66b6" ;
+:dataEMD "2021-02-16" ;
+:email "rodriguez.gonzalez@gdgoma.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 25 ;
+:index 80 ;
+:morada "Coaldale" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0eca6dd1525f201090
+:a60b3ee0eca6dd1525f201090 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :GDGoma ;
+:temModalidade :Orientação ;
+:primeiroNome "Christine" ;
+:segundoNome "Rice" ;
+:_id "60b3ee0eca6dd1525f201090" ;
+:dataEMD "2021-05-18" ;
+:email "christine.rice@gdgoma.co.uk" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 33 ;
+:index 81 ;
+:morada "Hayes" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e472001f8e05a40ee
+:a60b3ee0e472001f8e05a40ee rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Karaté ;
+:primeiroNome "Valdez" ;
+:segundoNome "Harper" ;
+:_id "60b3ee0e472001f8e05a40ee" ;
+:dataEMD "2020-11-10" ;
+:email "valdez.harper@amigosmontanha.me" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 33 ;
+:index 82 ;
+:morada "Jacksonwald" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e3b279f45e79cd6fa
+:a60b3ee0e3b279f45e79cd6fa rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Atletismo ;
+:primeiroNome "Berta" ;
+:segundoNome "Clay" ;
+:_id "60b3ee0e3b279f45e79cd6fa" ;
+:dataEMD "2021-04-24" ;
+:email "berta.clay@clube de orientação do minho.info" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 29 ;
+:index 83 ;
+:morada "Barclay" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0eee4b8338800e6003
+:a60b3ee0eee4b8338800e6003 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Equitação ;
+:primeiroNome "Bonnie" ;
+:segundoNome "Sandoval" ;
+:_id "60b3ee0eee4b8338800e6003" ;
+:dataEMD "2019-10-18" ;
+:email "bonnie.sandoval@clube de orientação do minho.org" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 22 ;
+:index 84 ;
+:morada "Shaft" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e66f3d4c3cc778b1e
+:a60b3ee0e66f3d4c3cc778b1e rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :Atletismo ;
+:primeiroNome "Stein" ;
+:segundoNome "Wiggins" ;
+:_id "60b3ee0e66f3d4c3cc778b1e" ;
+:dataEMD "2020-11-24" ;
+:email "stein.wiggins@edviana.name" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 35 ;
+:index 85 ;
+:morada "Rosine" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e278b7161e71d9ceb
+:a60b3ee0e278b7161e71d9ceb rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :GDGoma ;
+:temModalidade :SUP ;
+:primeiroNome "Tanya" ;
+:segundoNome "Mcclain" ;
+:_id "60b3ee0e278b7161e71d9ceb" ;
+:dataEMD "2020-12-08" ;
+:email "tanya.mcclain@gdgoma.us" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 26 ;
+:index 86 ;
+:morada "Fivepointville" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e7ded570068dce1d9
+:a60b3ee0e7ded570068dce1d9 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :Atletismo ;
+:primeiroNome "Perry" ;
+:segundoNome "Sanford" ;
+:_id "60b3ee0e7ded570068dce1d9" ;
+:dataEMD "2021-02-23" ;
+:email "perry.sanford@vitoria.com" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 32 ;
+:index 87 ;
+:morada "Albany" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e94c479068389f5e3
+:a60b3ee0e94c479068389f5e3 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Badminton ;
+:primeiroNome "Maxine" ;
+:segundoNome "Rutledge" ;
+:_id "60b3ee0e94c479068389f5e3" ;
+:dataEMD "2019-10-10" ;
+:email "maxine.rutledge@amigosmontanha.ca" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 33 ;
+:index 88 ;
+:morada "Caberfae" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e7ac2f667ececc242
+:a60b3ee0e7ac2f667ececc242 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :Badminton ;
+:primeiroNome "Tucker" ;
+:segundoNome "Morse" ;
+:_id "60b3ee0e7ac2f667ececc242" ;
+:dataEMD "2020-07-01" ;
+:email "tucker.morse@scbraga.net" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 26 ;
+:index 89 ;
+:morada "Tyhee" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0eabfeddd7f84fd275
+:a60b3ee0eabfeddd7f84fd275 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Badminton ;
+:primeiroNome "Thelma" ;
+:segundoNome "Schmidt" ;
+:_id "60b3ee0eabfeddd7f84fd275" ;
+:dataEMD "2020-05-17" ;
+:email "thelma.schmidt@acrroriz.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 23 ;
+:index 90 ;
+:morada "Greenfields" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e3d51473e1b41004b
+:a60b3ee0e3d51473e1b41004b rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :BTT ;
+:primeiroNome "Charles" ;
+:segundoNome "Kim" ;
+:_id "60b3ee0e3d51473e1b41004b" ;
+:dataEMD "2020-03-24" ;
+:email "charles.kim@acdrcrespos.tv" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 24 ;
+:index 91 ;
+:morada "Bennett" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e926c1d538dfaabd3
+:a60b3ee0e926c1d538dfaabd3 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Karaté ;
+:primeiroNome "Duncan" ;
+:segundoNome "Davidson" ;
+:_id "60b3ee0e926c1d538dfaabd3" ;
+:dataEMD "2020-01-27" ;
+:email "duncan.davidson@amigosmontanha.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 35 ;
+:index 92 ;
+:morada "Cedarville" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ea6339abf19460649
+:a60b3ee0ea6339abf19460649 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Badminton ;
+:primeiroNome "Gertrude" ;
+:segundoNome "Dillon" ;
+:_id "60b3ee0ea6339abf19460649" ;
+:dataEMD "2019-04-07" ;
+:email "gertrude.dillon@acrroriz.co.uk" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 27 ;
+:index 93 ;
+:morada "Oneida" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e059b32a47b518e93
+:a60b3ee0e059b32a47b518e93 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :BTT ;
+:primeiroNome "Brennan" ;
+:segundoNome "Santana" ;
+:_id "60b3ee0e059b32a47b518e93" ;
+:dataEMD "2019-02-06" ;
+:email "brennan.santana@vitoria.me" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 29 ;
+:index 94 ;
+:morada "Villarreal" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e57b3659681466acf
+:a60b3ee0e57b3659681466acf rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Parapente ;
+:primeiroNome "Ball" ;
+:segundoNome "Barlow" ;
+:_id "60b3ee0e57b3659681466acf" ;
+:dataEMD "2020-11-09" ;
+:email "ball.barlow@amigosmontanha.info" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 28 ;
+:index 95 ;
+:morada "Hobucken" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e651ec286b869976d
+:a60b3ee0e651ec286b869976d rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Triatlo ;
+:primeiroNome "Oneil" ;
+:segundoNome "Baxter" ;
+:_id "60b3ee0e651ec286b869976d" ;
+:dataEMD "2020-05-10" ;
+:email "oneil.baxter@clube de orientação do minho.org" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 24 ;
+:index 96 ;
+:morada "Sanders" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e67043c92ce84a97c
+:a60b3ee0e67043c92ce84a97c rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :Andebol ;
+:primeiroNome "Helena" ;
+:segundoNome "Mayo" ;
+:_id "60b3ee0e67043c92ce84a97c" ;
+:dataEMD "2020-10-09" ;
+:email "helena.mayo@vitoria.name" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 25 ;
+:index 97 ;
+:morada "Bend" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0ea5d75fed720e4820
+:a60b3ee0ea5d75fed720e4820 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Patinagem ;
+:primeiroNome "Martin" ;
+:segundoNome "Brewer" ;
+:_id "60b3ee0ea5d75fed720e4820" ;
+:dataEMD "2021-05-10" ;
+:email "martin.brewer@acrroriz.us" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 31 ;
+:index 98 ;
+:morada "Taycheedah" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee0e9dc10b681d5212b5
+:a60b3ee0e9dc10b681d5212b5 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :Badminton ;
+:primeiroNome "Wilder" ;
+:segundoNome "Greene" ;
+:_id "60b3ee0e9dc10b681d5212b5" ;
+:dataEMD "2019-10-13" ;
+:email "wilder.greene@vitoria.com" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 34 ;
+:index 99 ;
+:morada "Heil" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee817af5fb3fb1e153ef
+:a60b3ee817af5fb3fb1e153ef rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :Esgrima ;
+:primeiroNome "Harrison" ;
+:segundoNome "Finch" ;
+:_id "60b3ee817af5fb3fb1e153ef" ;
+:dataEMD "2019-06-23" ;
+:email "harrison.finch@edviana.us" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 21 ;
+:index 0 ;
+:morada "Harrison" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81145de55fffb7bdfa
+:a60b3ee81145de55fffb7bdfa rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :Atletismo ;
+:primeiroNome "Jordan" ;
+:segundoNome "Alvarez" ;
+:_id "60b3ee81145de55fffb7bdfa" ;
+:dataEMD "2019-01-01" ;
+:email "jordan.alvarez@edviana.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 25 ;
+:index 1 ;
+:morada "Riviera" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee811a4429c17e036357
+:a60b3ee811a4429c17e036357 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Patinagem ;
+:primeiroNome "Lane" ;
+:segundoNome "Norton" ;
+:_id "60b3ee811a4429c17e036357" ;
+:dataEMD "2020-04-27" ;
+:email "lane.norton@abcbraga.io" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 22 ;
+:index 2 ;
+:morada "Homestead" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee8115745fe4ce8dbc5a
+:a60b3ee8115745fe4ce8dbc5a rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :Esgrima ;
+:primeiroNome "Carrillo" ;
+:segundoNome "Munoz" ;
+:_id "60b3ee8115745fe4ce8dbc5a" ;
+:dataEMD "2020-07-06" ;
+:email "carrillo.munoz@scbraga.biz" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 32 ;
+:index 3 ;
+:morada "Bordelonville" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee8128adc82a45f8023d
+:a60b3ee8128adc82a45f8023d rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :BTT ;
+:primeiroNome "Barrett" ;
+:segundoNome "Frederick" ;
+:_id "60b3ee8128adc82a45f8023d" ;
+:dataEMD "2020-06-18" ;
+:email "barrett.frederick@avcfamalicão.net" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 29 ;
+:index 4 ;
+:morada "Stollings" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81525963fc4fd2cf9d
+:a60b3ee81525963fc4fd2cf9d rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Badminton ;
+:primeiroNome "Harmon" ;
+:segundoNome "Stone" ;
+:_id "60b3ee81525963fc4fd2cf9d" ;
+:dataEMD "2019-06-12" ;
+:email "harmon.stone@amigosmontanha.com" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 21 ;
+:index 5 ;
+:morada "Idledale" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81e69c16cc6108e7ad
+:a60b3ee81e69c16cc6108e7ad rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Patinagem ;
+:primeiroNome "Chandra" ;
+:segundoNome "Potts" ;
+:_id "60b3ee81e69c16cc6108e7ad" ;
+:dataEMD "2021-01-18" ;
+:email "chandra.potts@amigosmontanha.tv" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 32 ;
+:index 6 ;
+:morada "Albany" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81ec958ef30a9daa8d
+:a60b3ee81ec958ef30a9daa8d rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Badminton ;
+:primeiroNome "John" ;
+:segundoNome "Warner" ;
+:_id "60b3ee81ec958ef30a9daa8d" ;
+:dataEMD "2021-01-12" ;
+:email "john.warner@clube de orientação do minho.co.uk" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 22 ;
+:index 7 ;
+:morada "Veyo" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee813905ebb273d5d9a0
+:a60b3ee813905ebb273d5d9a0 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Patinagem ;
+:primeiroNome "Casey" ;
+:segundoNome "Bowman" ;
+:_id "60b3ee813905ebb273d5d9a0" ;
+:dataEMD "2019-03-09" ;
+:email "casey.bowman@abcbraga.ca" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 22 ;
+:index 8 ;
+:morada "Tryon" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee8106e9b44af3270a40
+:a60b3ee8106e9b44af3270a40 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Triatlo ;
+:primeiroNome "Mccullough" ;
+:segundoNome "Pena" ;
+:_id "60b3ee8106e9b44af3270a40" ;
+:dataEMD "2020-04-23" ;
+:email "mccullough.pena@clube de orientação do minho.name" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 27 ;
+:index 9 ;
+:morada "Sunwest" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee812f35f4ff3c2edecf
+:a60b3ee812f35f4ff3c2edecf rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Triatlo ;
+:primeiroNome "Brianna" ;
+:segundoNome "Bentley" ;
+:_id "60b3ee812f35f4ff3c2edecf" ;
+:dataEMD "2019-06-27" ;
+:email "brianna.bentley@acdrcrespos.org" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 28 ;
+:index 10 ;
+:morada "Ypsilanti" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee819d5bb33e21ff7e16
+:a60b3ee819d5bb33e21ff7e16 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Ténis ;
+:primeiroNome "Nixon" ;
+:segundoNome "Hendrix" ;
+:_id "60b3ee819d5bb33e21ff7e16" ;
+:dataEMD "2021-02-26" ;
+:email "nixon.hendrix@avcfamalicão.info" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 31 ;
+:index 11 ;
+:morada "Bethpage" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81ce306eb25d963bb0
+:a60b3ee81ce306eb25d963bb0 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :Esgrima ;
+:primeiroNome "Buckner" ;
+:segundoNome "Luna" ;
+:_id "60b3ee81ce306eb25d963bb0" ;
+:dataEMD "2019-07-11" ;
+:email "buckner.luna@edviana.us" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 22 ;
+:index 12 ;
+:morada "Veguita" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee8138f5b0173e1bc637
+:a60b3ee8138f5b0173e1bc637 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Ténis ;
+:primeiroNome "Britt" ;
+:segundoNome "Zamora" ;
+:_id "60b3ee8138f5b0173e1bc637" ;
+:dataEMD "2019-08-25" ;
+:email "britt.zamora@clube de orientação do minho.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 23 ;
+:index 13 ;
+:morada "Rutherford" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81f5035e13f1db0069
+:a60b3ee81f5035e13f1db0069 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :Karaté ;
+:primeiroNome "Hendrix" ;
+:segundoNome "Bauer" ;
+:_id "60b3ee81f5035e13f1db0069" ;
+:dataEMD "2020-11-14" ;
+:email "hendrix.bauer@scbraga.io" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 30 ;
+:index 14 ;
+:morada "Ryderwood" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee8131597dae8f73a11b
+:a60b3ee8131597dae8f73a11b rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :Ténis ;
+:primeiroNome "Travis" ;
+:segundoNome "Sampson" ;
+:_id "60b3ee8131597dae8f73a11b" ;
+:dataEMD "2019-10-30" ;
+:email "travis.sampson@edviana.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 29 ;
+:index 15 ;
+:morada "Dotsero" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81e32abefb2a9e8629
+:a60b3ee81e32abefb2a9e8629 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :GDGoma ;
+:temModalidade :Triatlo ;
+:primeiroNome "Darla" ;
+:segundoNome "Ware" ;
+:_id "60b3ee81e32abefb2a9e8629" ;
+:dataEMD "2019-11-22" ;
+:email "darla.ware@gdgoma.net" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 21 ;
+:index 16 ;
+:morada "Villarreal" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee815852d8fc2dc33e8a
+:a60b3ee815852d8fc2dc33e8a rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Ténis ;
+:primeiroNome "Peters" ;
+:segundoNome "Vaughn" ;
+:_id "60b3ee815852d8fc2dc33e8a" ;
+:dataEMD "2020-01-17" ;
+:email "peters.vaughn@acrroriz.com" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 21 ;
+:index 17 ;
+:morada "Brandermill" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee815e7f792d741f2228
+:a60b3ee815e7f792d741f2228 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :GDGoma ;
+:temModalidade :Futebol ;
+:primeiroNome "Lawrence" ;
+:segundoNome "Herman" ;
+:_id "60b3ee815e7f792d741f2228" ;
+:dataEMD "2020-10-25" ;
+:email "lawrence.herman@gdgoma.tv" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 31 ;
+:index 18 ;
+:morada "Wakulla" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee815b7d9a126c47165d
+:a60b3ee815b7d9a126c47165d rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :Triatlo ;
+:primeiroNome "Chang" ;
+:segundoNome "Oneill" ;
+:_id "60b3ee815b7d9a126c47165d" ;
+:dataEMD "2019-07-26" ;
+:email "chang.oneill@edviana.co.uk" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 24 ;
+:index 19 ;
+:morada "Falconaire" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81e769b6603a6525c6
+:a60b3ee81e769b6603a6525c6 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :BTT ;
+:primeiroNome "Patrick" ;
+:segundoNome "Mcintyre" ;
+:_id "60b3ee81e769b6603a6525c6" ;
+:dataEMD "2020-12-20" ;
+:email "patrick.mcintyre@edviana.ca" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 21 ;
+:index 20 ;
+:morada "Emory" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee815cb65367e6de0b3c
+:a60b3ee815cb65367e6de0b3c rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Andebol ;
+:primeiroNome "Joyce" ;
+:segundoNome "Evans" ;
+:_id "60b3ee815cb65367e6de0b3c" ;
+:dataEMD "2020-01-11" ;
+:email "joyce.evans@amigosmontanha.name" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 27 ;
+:index 21 ;
+:morada "Rivers" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee813bd664873721a6a1
+:a60b3ee813bd664873721a6a1 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :Triatlo ;
+:primeiroNome "Larsen" ;
+:segundoNome "Villarreal" ;
+:_id "60b3ee813bd664873721a6a1" ;
+:dataEMD "2019-07-03" ;
+:email "larsen.villarreal@scbraga.org" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 25 ;
+:index 22 ;
+:morada "Dawn" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81e901a8c787b38008
+:a60b3ee81e901a8c787b38008 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Basquetebol ;
+:primeiroNome "Morrow" ;
+:segundoNome "Yang" ;
+:_id "60b3ee81e901a8c787b38008" ;
+:dataEMD "2020-03-09" ;
+:email "morrow.yang@acdrcrespos.info" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 24 ;
+:index 23 ;
+:morada "Tibbie" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81874f8871966eedd1
+:a60b3ee81874f8871966eedd1 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Andebol ;
+:primeiroNome "Dunn" ;
+:segundoNome "Horn" ;
+:_id "60b3ee81874f8871966eedd1" ;
+:dataEMD "2021-02-04" ;
+:email "dunn.horn@clube de orientação do minho.us" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 31 ;
+:index 24 ;
+:morada "Ripley" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81146b3cd8954b7256
+:a60b3ee81146b3cd8954b7256 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :Esgrima ;
+:primeiroNome "Viola" ;
+:segundoNome "Medina" ;
+:_id "60b3ee81146b3cd8954b7256" ;
+:dataEMD "2019-09-04" ;
+:email "viola.medina@edviana.biz" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 24 ;
+:index 25 ;
+:morada "Nipinnawasee" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81e02e5fb35760bec3
+:a60b3ee81e02e5fb35760bec3 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Parapente ;
+:primeiroNome "Valdez" ;
+:segundoNome "Barnes" ;
+:_id "60b3ee81e02e5fb35760bec3" ;
+:dataEMD "2021-05-14" ;
+:email "valdez.barnes@acdrcrespos.io" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 22 ;
+:index 26 ;
+:morada "Islandia" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee8162c5de4569ccfe2f
+:a60b3ee8162c5de4569ccfe2f rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Esgrima ;
+:primeiroNome "Sweet" ;
+:segundoNome "Gibbs" ;
+:_id "60b3ee8162c5de4569ccfe2f" ;
+:dataEMD "2019-08-29" ;
+:email "sweet.gibbs@avcfamalicão.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 35 ;
+:index 27 ;
+:morada "Stagecoach" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81034e5cb2050e882a
+:a60b3ee81034e5cb2050e882a rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Ténis ;
+:primeiroNome "Addie" ;
+:segundoNome "Hayes" ;
+:_id "60b3ee81034e5cb2050e882a" ;
+:dataEMD "2019-07-17" ;
+:email "addie.hayes@acrroriz.net" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 23 ;
+:index 28 ;
+:morada "Bennett" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81a545dd3ccaea41b0
+:a60b3ee81a545dd3ccaea41b0 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :SUP ;
+:primeiroNome "May" ;
+:segundoNome "Holt" ;
+:_id "60b3ee81a545dd3ccaea41b0" ;
+:dataEMD "2021-04-25" ;
+:email "may.holt@amigosmontanha.com" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 34 ;
+:index 29 ;
+:morada "Springdale" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee817c1ce5b6cb67302a
+:a60b3ee817c1ce5b6cb67302a rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Esgrima ;
+:primeiroNome "Christensen" ;
+:segundoNome "Boyd" ;
+:_id "60b3ee817c1ce5b6cb67302a" ;
+:dataEMD "2019-12-31" ;
+:email "christensen.boyd@abcbraga.tv" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 34 ;
+:index 30 ;
+:morada "Wells" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81cdbf91a4db1113eb
+:a60b3ee81cdbf91a4db1113eb rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Andebol ;
+:primeiroNome "Workman" ;
+:segundoNome "Franks" ;
+:_id "60b3ee81cdbf91a4db1113eb" ;
+:dataEMD "2019-03-18" ;
+:email "workman.franks@amigosmontanha.co.uk" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 31 ;
+:index 31 ;
+:morada "Greenfields" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81ed581129ff3b2087
+:a60b3ee81ed581129ff3b2087 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Andebol ;
+:primeiroNome "Lucile" ;
+:segundoNome "Underwood" ;
+:_id "60b3ee81ed581129ff3b2087" ;
+:dataEMD "2020-01-05" ;
+:email "lucile.underwood@avcfamalicão.ca" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 34 ;
+:index 32 ;
+:morada "Innsbrook" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81e62094c1d0bfca5c
+:a60b3ee81e62094c1d0bfca5c rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Esgrima ;
+:primeiroNome "Heath" ;
+:segundoNome "Bishop" ;
+:_id "60b3ee81e62094c1d0bfca5c" ;
+:dataEMD "2019-08-09" ;
+:email "heath.bishop@amigosmontanha.name" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 32 ;
+:index 33 ;
+:morada "Grantville" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81bc1a4f4c3bc26de1
+:a60b3ee81bc1a4f4c3bc26de1 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Badminton ;
+:primeiroNome "Rosales" ;
+:segundoNome "Mejia" ;
+:_id "60b3ee81bc1a4f4c3bc26de1" ;
+:dataEMD "2019-04-12" ;
+:email "rosales.mejia@clube de orientação do minho.org" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 23 ;
+:index 34 ;
+:morada "Dale" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81e20d4412bdf4f468
+:a60b3ee81e20d4412bdf4f468 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :Atletismo ;
+:primeiroNome "Ray" ;
+:segundoNome "Howe" ;
+:_id "60b3ee81e20d4412bdf4f468" ;
+:dataEMD "2019-02-02" ;
+:email "ray.howe@vitoria.info" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 25 ;
+:index 35 ;
+:morada "Nicut" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81956a3fcc57d06c8c
+:a60b3ee81956a3fcc57d06c8c rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Atletismo ;
+:primeiroNome "Suarez" ;
+:segundoNome "Campbell" ;
+:_id "60b3ee81956a3fcc57d06c8c" ;
+:dataEMD "2019-07-05" ;
+:email "suarez.campbell@acdrcrespos.us" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 34 ;
+:index 36 ;
+:morada "Hamilton" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee8125e3c7f8ae2daa67
+:a60b3ee8125e3c7f8ae2daa67 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Ciclismo ;
+:primeiroNome "Shaffer" ;
+:segundoNome "Le" ;
+:_id "60b3ee8125e3c7f8ae2daa67" ;
+:dataEMD "2020-01-20" ;
+:email "shaffer.le@avcfamalicão.biz" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 32 ;
+:index 37 ;
+:morada "Shepardsville" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81c0d4102a9f396149
+:a60b3ee81c0d4102a9f396149 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Ciclismo ;
+:primeiroNome "Justine" ;
+:segundoNome "Wise" ;
+:_id "60b3ee81c0d4102a9f396149" ;
+:dataEMD "2019-02-08" ;
+:email "justine.wise@avcfamalicão.io" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 31 ;
+:index 38 ;
+:morada "Hondah" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81b5064ca4e9536d3c
+:a60b3ee81b5064ca4e9536d3c rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Triatlo ;
+:primeiroNome "Villarreal" ;
+:segundoNome "Tucker" ;
+:_id "60b3ee81b5064ca4e9536d3c" ;
+:dataEMD "2019-10-14" ;
+:email "villarreal.tucker@avcfamalicão.biz" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 23 ;
+:index 39 ;
+:morada "Tecolotito" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee8195bd88f9e936aca7
+:a60b3ee8195bd88f9e936aca7 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Badminton ;
+:primeiroNome "Monica" ;
+:segundoNome "Neal" ;
+:_id "60b3ee8195bd88f9e936aca7" ;
+:dataEMD "2021-04-05" ;
+:email "monica.neal@acrroriz.net" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 30 ;
+:index 40 ;
+:morada "Roberts" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81864959e7fb8bc864
+:a60b3ee81864959e7fb8bc864 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Patinagem ;
+:primeiroNome "Lloyd" ;
+:segundoNome "Dotson" ;
+:_id "60b3ee81864959e7fb8bc864" ;
+:dataEMD "2019-05-11" ;
+:email "lloyd.dotson@abcbraga.com" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 21 ;
+:index 41 ;
+:morada "Winesburg" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee8187b3e7d863bbaf97
+:a60b3ee8187b3e7d863bbaf97 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :Dança ;
+:primeiroNome "Mccray" ;
+:segundoNome "Barker" ;
+:_id "60b3ee8187b3e7d863bbaf97" ;
+:dataEMD "2019-01-29" ;
+:email "mccray.barker@vitoria.tv" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 35 ;
+:index 42 ;
+:morada "Blairstown" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81afbc52a666850b8c
+:a60b3ee81afbc52a666850b8c rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :Parapente ;
+:primeiroNome "Sellers" ;
+:segundoNome "Hunter" ;
+:_id "60b3ee81afbc52a666850b8c" ;
+:dataEMD "2019-02-14" ;
+:email "sellers.hunter@scbraga.co.uk" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 23 ;
+:index 43 ;
+:morada "Omar" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81d74bfab7c22b5eaa
+:a60b3ee81d74bfab7c22b5eaa rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Patinagem ;
+:primeiroNome "Cathryn" ;
+:segundoNome "Fletcher" ;
+:_id "60b3ee81d74bfab7c22b5eaa" ;
+:dataEMD "2021-01-31" ;
+:email "cathryn.fletcher@clube de orientação do minho.ca" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 29 ;
+:index 44 ;
+:morada "Oasis" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee810078ab3f7321a731
+:a60b3ee810078ab3f7321a731 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :Basquetebol ;
+:primeiroNome "Dee" ;
+:segundoNome "Lowery" ;
+:_id "60b3ee810078ab3f7321a731" ;
+:dataEMD "2020-02-29" ;
+:email "dee.lowery@vitoria.name" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 21 ;
+:index 45 ;
+:morada "Rodman" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81a40cc7fc63be65ad
+:a60b3ee81a40cc7fc63be65ad rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Triatlo ;
+:primeiroNome "Freeman" ;
+:segundoNome "Wyatt" ;
+:_id "60b3ee81a40cc7fc63be65ad" ;
+:dataEMD "2019-04-25" ;
+:email "freeman.wyatt@acrroriz.org" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 26 ;
+:index 46 ;
+:morada "Bentonville" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81efda597f9d074638
+:a60b3ee81efda597f9d074638 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Karaté ;
+:primeiroNome "Guy" ;
+:segundoNome "Drake" ;
+:_id "60b3ee81efda597f9d074638" ;
+:dataEMD "2020-01-09" ;
+:email "guy.drake@abcbraga.info" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 25 ;
+:index 47 ;
+:morada "Helen" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81d9e0e05421b4d08e
+:a60b3ee81d9e0e05421b4d08e rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Triatlo ;
+:primeiroNome "Mendez" ;
+:segundoNome "Good" ;
+:_id "60b3ee81d9e0e05421b4d08e" ;
+:dataEMD "2019-07-01" ;
+:email "mendez.good@clube de orientação do minho.us" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 33 ;
+:index 48 ;
+:morada "Westmoreland" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee813611a9e67c3546a3
+:a60b3ee813611a9e67c3546a3 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Parapente ;
+:primeiroNome "Burnett" ;
+:segundoNome "Hogan" ;
+:_id "60b3ee813611a9e67c3546a3" ;
+:dataEMD "2019-03-03" ;
+:email "burnett.hogan@acrroriz.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 24 ;
+:index 49 ;
+:morada "Valmy" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee816e416ff33c21634a
+:a60b3ee816e416ff33c21634a rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Futebol ;
+:primeiroNome "Jamie" ;
+:segundoNome "Cherry" ;
+:_id "60b3ee816e416ff33c21634a" ;
+:dataEMD "2020-08-03" ;
+:email "jamie.cherry@abcbraga.io" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 23 ;
+:index 50 ;
+:morada "Forbestown" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81858e8c650b8d992f
+:a60b3ee81858e8c650b8d992f rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Karaté ;
+:primeiroNome "Bird" ;
+:segundoNome "Noble" ;
+:_id "60b3ee81858e8c650b8d992f" ;
+:dataEMD "2019-09-06" ;
+:email "bird.noble@acrroriz.biz" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 21 ;
+:index 51 ;
+:morada "Lafferty" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee817468bb467a39e2f8
+:a60b3ee817468bb467a39e2f8 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Patinagem ;
+:primeiroNome "Burgess" ;
+:segundoNome "Bradshaw" ;
+:_id "60b3ee817468bb467a39e2f8" ;
+:dataEMD "2020-08-11" ;
+:email "burgess.bradshaw@abcbraga.net" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 25 ;
+:index 52 ;
+:morada "Bluffview" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee8117de88dc519ae9d3
+:a60b3ee8117de88dc519ae9d3 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Parapente ;
+:primeiroNome "Laura" ;
+:segundoNome "Jacobson" ;
+:_id "60b3ee8117de88dc519ae9d3" ;
+:dataEMD "2020-10-22" ;
+:email "laura.jacobson@acrroriz.com" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 27 ;
+:index 53 ;
+:morada "Kirk" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee8160bf5c46dcb3cfa7
+:a60b3ee8160bf5c46dcb3cfa7 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :Badminton ;
+:primeiroNome "Blair" ;
+:segundoNome "Sherman" ;
+:_id "60b3ee8160bf5c46dcb3cfa7" ;
+:dataEMD "2020-09-06" ;
+:email "blair.sherman@scbraga.tv" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 31 ;
+:index 54 ;
+:morada "Waukeenah" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81ea2bed08bf81e861
+:a60b3ee81ea2bed08bf81e861 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :Esgrima ;
+:primeiroNome "Bobbi" ;
+:segundoNome "Hawkins" ;
+:_id "60b3ee81ea2bed08bf81e861" ;
+:dataEMD "2020-09-01" ;
+:email "bobbi.hawkins@scbraga.co.uk" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 26 ;
+:index 55 ;
+:morada "Takilma" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81051fe3467036095a
+:a60b3ee81051fe3467036095a rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Basquetebol ;
+:primeiroNome "Montoya" ;
+:segundoNome "Anthony" ;
+:_id "60b3ee81051fe3467036095a" ;
+:dataEMD "2019-12-21" ;
+:email "montoya.anthony@acrroriz.ca" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 31 ;
+:index 56 ;
+:morada "Clara" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee8152ddb1911c44b96a
+:a60b3ee8152ddb1911c44b96a rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :BTT ;
+:primeiroNome "Hooper" ;
+:segundoNome "Kirby" ;
+:_id "60b3ee8152ddb1911c44b96a" ;
+:dataEMD "2021-01-29" ;
+:email "hooper.kirby@acrroriz.name" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 26 ;
+:index 57 ;
+:morada "Roosevelt" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81839f04840d199de9
+:a60b3ee81839f04840d199de9 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Esgrima ;
+:primeiroNome "Wolfe" ;
+:segundoNome "Baird" ;
+:_id "60b3ee81839f04840d199de9" ;
+:dataEMD "2020-12-30" ;
+:email "wolfe.baird@avcfamalicão.org" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 24 ;
+:index 58 ;
+:morada "Faxon" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81375cc4e9aba8bc6e
+:a60b3ee81375cc4e9aba8bc6e rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :SUP ;
+:primeiroNome "Lamb" ;
+:segundoNome "Graham" ;
+:_id "60b3ee81375cc4e9aba8bc6e" ;
+:dataEMD "2019-01-03" ;
+:email "lamb.graham@avcfamalicão.info" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 33 ;
+:index 59 ;
+:morada "Bluetown" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81422fd173977583e5
+:a60b3ee81422fd173977583e5 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :BTT ;
+:primeiroNome "Valentine" ;
+:segundoNome "Fitzgerald" ;
+:_id "60b3ee81422fd173977583e5" ;
+:dataEMD "2021-04-22" ;
+:email "valentine.fitzgerald@abcbraga.us" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 32 ;
+:index 60 ;
+:morada "Kersey" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee813c7547937e764cab
+:a60b3ee813c7547937e764cab rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Andebol ;
+:primeiroNome "Herminia" ;
+:segundoNome "Mooney" ;
+:_id "60b3ee813c7547937e764cab" ;
+:dataEMD "2020-06-26" ;
+:email "herminia.mooney@amigosmontanha.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 21 ;
+:index 61 ;
+:morada "Matheny" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee818db2661d700d6ea3
+:a60b3ee818db2661d700d6ea3 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Badminton ;
+:primeiroNome "Golden" ;
+:segundoNome "Hopkins" ;
+:_id "60b3ee818db2661d700d6ea3" ;
+:dataEMD "2019-09-08" ;
+:email "golden.hopkins@avcfamalicão.io" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 31 ;
+:index 62 ;
+:morada "Courtland" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee811426bce48b453191
+:a60b3ee811426bce48b453191 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :Triatlo ;
+:primeiroNome "Lancaster" ;
+:segundoNome "Andrews" ;
+:_id "60b3ee811426bce48b453191" ;
+:dataEMD "2020-12-22" ;
+:email "lancaster.andrews@vitoria.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 24 ;
+:index 63 ;
+:morada "Longoria" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81d13fde44c2e74aab
+:a60b3ee81d13fde44c2e74aab rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Futebol ;
+:primeiroNome "Elena" ;
+:segundoNome "Sullivan" ;
+:_id "60b3ee81d13fde44c2e74aab" ;
+:dataEMD "2019-08-15" ;
+:email "elena.sullivan@clube de orientação do minho.net" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 28 ;
+:index 64 ;
+:morada "Leola" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81ef9b6d894223a9fd
+:a60b3ee81ef9b6d894223a9fd rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Andebol ;
+:primeiroNome "Deana" ;
+:segundoNome "Ramsey" ;
+:_id "60b3ee81ef9b6d894223a9fd" ;
+:dataEMD "2020-04-26" ;
+:email "deana.ramsey@acrroriz.com" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 23 ;
+:index 65 ;
+:morada "Gila" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee8154161dd7358b2e65
+:a60b3ee8154161dd7358b2e65 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Patinagem ;
+:primeiroNome "Mayra" ;
+:segundoNome "Rose" ;
+:_id "60b3ee8154161dd7358b2e65" ;
+:dataEMD "2019-12-01" ;
+:email "mayra.rose@acdrcrespos.tv" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 33 ;
+:index 66 ;
+:morada "Calpine" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81fcb5c8f9970e2899
+:a60b3ee81fcb5c8f9970e2899 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :SUP ;
+:primeiroNome "Tina" ;
+:segundoNome "Salinas" ;
+:_id "60b3ee81fcb5c8f9970e2899" ;
+:dataEMD "2020-07-27" ;
+:email "tina.salinas@vitoria.co.uk" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 29 ;
+:index 67 ;
+:morada "Welda" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81e97e332884e1299a
+:a60b3ee81e97e332884e1299a rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Triatlo ;
+:primeiroNome "Sheila" ;
+:segundoNome "Caldwell" ;
+:_id "60b3ee81e97e332884e1299a" ;
+:dataEMD "2020-05-24" ;
+:email "sheila.caldwell@avcfamalicão.ca" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 22 ;
+:index 68 ;
+:morada "Leroy" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee8151ebf5ddaa5ca13c
+:a60b3ee8151ebf5ddaa5ca13c rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :Orientação ;
+:primeiroNome "Hudson" ;
+:segundoNome "Duffy" ;
+:_id "60b3ee8151ebf5ddaa5ca13c" ;
+:dataEMD "2020-01-02" ;
+:email "hudson.duffy@edviana.name" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 22 ;
+:index 69 ;
+:morada "Whitestone" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee818e25f41f67491f02
+:a60b3ee818e25f41f67491f02 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Orientação ;
+:primeiroNome "Guzman" ;
+:segundoNome "Douglas" ;
+:_id "60b3ee818e25f41f67491f02" ;
+:dataEMD "2021-04-22" ;
+:email "guzman.douglas@abcbraga.org" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 21 ;
+:index 70 ;
+:morada "Alderpoint" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee817ca74f6cb607c6f9
+:a60b3ee817ca74f6cb607c6f9 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Orientação ;
+:primeiroNome "Ethel" ;
+:segundoNome "Bartlett" ;
+:_id "60b3ee817ca74f6cb607c6f9" ;
+:dataEMD "2019-12-09" ;
+:email "ethel.bartlett@acrroriz.info" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 26 ;
+:index 71 ;
+:morada "Muir" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee818cd611e6bf56f2f1
+:a60b3ee818cd611e6bf56f2f1 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Esgrima ;
+:primeiroNome "Doyle" ;
+:segundoNome "Odom" ;
+:_id "60b3ee818cd611e6bf56f2f1" ;
+:dataEMD "2021-04-13" ;
+:email "doyle.odom@amigosmontanha.us" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 23 ;
+:index 72 ;
+:morada "Newry" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81c1515414ac1fb549
+:a60b3ee81c1515414ac1fb549 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Ciclismo ;
+:primeiroNome "Araceli" ;
+:segundoNome "Castaneda" ;
+:_id "60b3ee81c1515414ac1fb549" ;
+:dataEMD "2020-06-02" ;
+:email "araceli.castaneda@avcfamalicão.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 28 ;
+:index 73 ;
+:morada "Magnolia" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81d15fe413bd86d938
+:a60b3ee81d15fe413bd86d938 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :Atletismo ;
+:primeiroNome "Fuentes" ;
+:segundoNome "Walker" ;
+:_id "60b3ee81d15fe413bd86d938" ;
+:dataEMD "2020-06-04" ;
+:email "fuentes.walker@scbraga.io" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 25 ;
+:index 74 ;
+:morada "Leming" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81e2dc932e4e6f7e51
+:a60b3ee81e2dc932e4e6f7e51 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Basquetebol ;
+:primeiroNome "Sarah" ;
+:segundoNome "Moore" ;
+:_id "60b3ee81e2dc932e4e6f7e51" ;
+:dataEMD "2019-01-09" ;
+:email "sarah.moore@acdrcrespos.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 35 ;
+:index 75 ;
+:morada "Morgandale" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81f9666482a5c13406
+:a60b3ee81f9666482a5c13406 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :GDGoma ;
+:temModalidade :Orientação ;
+:primeiroNome "Cheryl" ;
+:segundoNome "Watson" ;
+:_id "60b3ee81f9666482a5c13406" ;
+:dataEMD "2019-10-25" ;
+:email "cheryl.watson@gdgoma.net" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 31 ;
+:index 76 ;
+:morada "Fairview" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81d7dbdba97369e927
+:a60b3ee81d7dbdba97369e927 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Andebol ;
+:primeiroNome "Langley" ;
+:segundoNome "Velez" ;
+:_id "60b3ee81d7dbdba97369e927" ;
+:dataEMD "2019-04-12" ;
+:email "langley.velez@acrroriz.com" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 33 ;
+:index 77 ;
+:morada "Neahkahnie" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81e024b81dde892dd6
+:a60b3ee81e024b81dde892dd6 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :GDGoma ;
+:temModalidade :Futebol ;
+:primeiroNome "Alisa" ;
+:segundoNome "Morrison" ;
+:_id "60b3ee81e024b81dde892dd6" ;
+:dataEMD "2019-06-30" ;
+:email "alisa.morrison@gdgoma.tv" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 26 ;
+:index 78 ;
+:morada "Kiskimere" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81c5073acaa4febef6
+:a60b3ee81c5073acaa4febef6 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Ciclismo ;
+:primeiroNome "Malinda" ;
+:segundoNome "Merritt" ;
+:_id "60b3ee81c5073acaa4febef6" ;
+:dataEMD "2019-12-29" ;
+:email "malinda.merritt@abcbraga.co.uk" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 33 ;
+:index 79 ;
+:morada "Cecilia" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81963e6ecf70e3d586
+:a60b3ee81963e6ecf70e3d586 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Triatlo ;
+:primeiroNome "Lenora" ;
+:segundoNome "Kane" ;
+:_id "60b3ee81963e6ecf70e3d586" ;
+:dataEMD "2020-07-30" ;
+:email "lenora.kane@abcbraga.ca" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 30 ;
+:index 80 ;
+:morada "Axis" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee8122f33125935e59d3
+:a60b3ee8122f33125935e59d3 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Futebol ;
+:primeiroNome "Cabrera" ;
+:segundoNome "Curtis" ;
+:_id "60b3ee8122f33125935e59d3" ;
+:dataEMD "2021-02-25" ;
+:email "cabrera.curtis@avcfamalicão.name" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 22 ;
+:index 81 ;
+:morada "Beechmont" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81828ee0dba6850475
+:a60b3ee81828ee0dba6850475 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :BTT ;
+:primeiroNome "Roseann" ;
+:segundoNome "Benjamin" ;
+:_id "60b3ee81828ee0dba6850475" ;
+:dataEMD "2020-05-28" ;
+:email "roseann.benjamin@abcbraga.org" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 21 ;
+:index 82 ;
+:morada "Stewart" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee8152b3f05331a47645
+:a60b3ee8152b3f05331a47645 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Parapente ;
+:primeiroNome "Stafford" ;
+:segundoNome "Ray" ;
+:_id "60b3ee8152b3f05331a47645" ;
+:dataEMD "2020-04-29" ;
+:email "stafford.ray@acdrcrespos.info" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 21 ;
+:index 83 ;
+:morada "Zeba" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81411e7acd216d0bf0
+:a60b3ee81411e7acd216d0bf0 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Patinagem ;
+:primeiroNome "Jewel" ;
+:segundoNome "Trevino" ;
+:_id "60b3ee81411e7acd216d0bf0" ;
+:dataEMD "2019-09-18" ;
+:email "jewel.trevino@acrroriz.us" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 29 ;
+:index 84 ;
+:morada "Garnet" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee8103ed6d19e90ce9f7
+:a60b3ee8103ed6d19e90ce9f7 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Ténis ;
+:primeiroNome "Mckenzie" ;
+:segundoNome "Woods" ;
+:_id "60b3ee8103ed6d19e90ce9f7" ;
+:dataEMD "2020-09-04" ;
+:email "mckenzie.woods@acrroriz.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 24 ;
+:index 85 ;
+:morada "Craig" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee8182b8712a2f15e41a
+:a60b3ee8182b8712a2f15e41a rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :GDGoma ;
+:temModalidade :Triatlo ;
+:primeiroNome "Jean" ;
+:segundoNome "Conley" ;
+:_id "60b3ee8182b8712a2f15e41a" ;
+:dataEMD "2020-12-10" ;
+:email "jean.conley@gdgoma.io" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 21 ;
+:index 86 ;
+:morada "Tilleda" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee811a2021b6b24ffbc2
+:a60b3ee811a2021b6b24ffbc2 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :BTT ;
+:primeiroNome "Conway" ;
+:segundoNome "Alexander" ;
+:_id "60b3ee811a2021b6b24ffbc2" ;
+:dataEMD "2020-09-14" ;
+:email "conway.alexander@scbraga.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 24 ;
+:index 87 ;
+:morada "Darrtown" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81c44446a9eceefd87
+:a60b3ee81c44446a9eceefd87 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Andebol ;
+:primeiroNome "Maryann" ;
+:segundoNome "Joyce" ;
+:_id "60b3ee81c44446a9eceefd87" ;
+:dataEMD "2020-04-08" ;
+:email "maryann.joyce@acdrcrespos.net" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 21 ;
+:index 88 ;
+:morada "Harmon" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee812d50aad901e7e243
+:a60b3ee812d50aad901e7e243 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :GDGoma ;
+:temModalidade :Ciclismo ;
+:primeiroNome "Ayers" ;
+:segundoNome "Carroll" ;
+:_id "60b3ee812d50aad901e7e243" ;
+:dataEMD "2019-07-31" ;
+:email "ayers.carroll@gdgoma.com" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 35 ;
+:index 89 ;
+:morada "Sylvanite" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee816b42d22ea075aba7
+:a60b3ee816b42d22ea075aba7 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :GDGoma ;
+:temModalidade :Esgrima ;
+:primeiroNome "Bonita" ;
+:segundoNome "Mccormick" ;
+:_id "60b3ee816b42d22ea075aba7" ;
+:dataEMD "2019-01-29" ;
+:email "bonita.mccormick@gdgoma.tv" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 35 ;
+:index 90 ;
+:morada "Marshall" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee812a4b8125a96689a0
+:a60b3ee812a4b8125a96689a0 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :Karaté ;
+:primeiroNome "Kathy" ;
+:segundoNome "Kramer" ;
+:_id "60b3ee812a4b8125a96689a0" ;
+:dataEMD "2019-04-28" ;
+:email "kathy.kramer@edviana.co.uk" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 24 ;
+:index 91 ;
+:morada "Williams" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81b71a63346d0243e7
+:a60b3ee81b71a63346d0243e7 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :Basquetebol ;
+:primeiroNome "Tonia" ;
+:segundoNome "Bryan" ;
+:_id "60b3ee81b71a63346d0243e7" ;
+:dataEMD "2020-10-10" ;
+:email "tonia.bryan@edviana.ca" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 35 ;
+:index 92 ;
+:morada "Corinne" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81559385200672594d
+:a60b3ee81559385200672594d rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Triatlo ;
+:primeiroNome "Barker" ;
+:segundoNome "Mercer" ;
+:_id "60b3ee81559385200672594d" ;
+:dataEMD "2020-02-02" ;
+:email "barker.mercer@avcfamalicão.name" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 34 ;
+:index 93 ;
+:morada "Grayhawk" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81a113b4cb68ef5906
+:a60b3ee81a113b4cb68ef5906 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Equitação ;
+:primeiroNome "Mcfarland" ;
+:segundoNome "Tyson" ;
+:_id "60b3ee81a113b4cb68ef5906" ;
+:dataEMD "2019-05-19" ;
+:email "mcfarland.tyson@amigosmontanha.org" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 25 ;
+:index 94 ;
+:morada "Kula" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81655cc723f988a62d
+:a60b3ee81655cc723f988a62d rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :SUP ;
+:primeiroNome "Meagan" ;
+:segundoNome "Carter" ;
+:_id "60b3ee81655cc723f988a62d" ;
+:dataEMD "2021-02-19" ;
+:email "meagan.carter@scbraga.info" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 35 ;
+:index 95 ;
+:morada "Martinsville" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee8186fff74d432c9259
+:a60b3ee8186fff74d432c9259 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Futebol ;
+:primeiroNome "Catalina" ;
+:segundoNome "Webb" ;
+:_id "60b3ee8186fff74d432c9259" ;
+:dataEMD "2019-06-25" ;
+:email "catalina.webb@abcbraga.us" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 35 ;
+:index 96 ;
+:morada "Aurora" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81051bf4a2138bb141
+:a60b3ee81051bf4a2138bb141 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Esgrima ;
+:primeiroNome "Moses" ;
+:segundoNome "Sargent" ;
+:_id "60b3ee81051bf4a2138bb141" ;
+:dataEMD "2020-10-31" ;
+:email "moses.sargent@abcbraga.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 25 ;
+:index 97 ;
+:morada "Wildwood" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81c4345661feac7a9a
+:a60b3ee81c4345661feac7a9a rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Karaté ;
+:primeiroNome "Preston" ;
+:segundoNome "Mccall" ;
+:_id "60b3ee81c4345661feac7a9a" ;
+:dataEMD "2021-02-19" ;
+:email "preston.mccall@avcfamalicão.io" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 33 ;
+:index 98 ;
+:morada "Mathews" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3ee81451b811209c3deef
+:a60b3ee81451b811209c3deef rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Atletismo ;
+:primeiroNome "Christian" ;
+:segundoNome "Clements" ;
+:_id "60b3ee81451b811209c3deef" ;
+:dataEMD "2019-06-30" ;
+:email "christian.clements@acdrcrespos.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 33 ;
+:index 99 ;
+:morada "Cochranville" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb933e50bd455af89a9
+:a60b3eeb933e50bd455af89a9 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Patinagem ;
+:primeiroNome "Jeanine" ;
+:segundoNome "Hester" ;
+:_id "60b3eeb933e50bd455af89a9" ;
+:dataEMD "2020-08-30" ;
+:email "jeanine.hester@avcfamalicão.name" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 30 ;
+:index 0 ;
+:morada "Baden" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9b701a941937c0dd8
+:a60b3eeb9b701a941937c0dd8 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Andebol ;
+:primeiroNome "Tonia" ;
+:segundoNome "Espinoza" ;
+:_id "60b3eeb9b701a941937c0dd8" ;
+:dataEMD "2020-08-12" ;
+:email "tonia.espinoza@avcfamalicão.ca" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 24 ;
+:index 1 ;
+:morada "Fillmore" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9fc87ff10010ae517
+:a60b3eeb9fc87ff10010ae517 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :SUP ;
+:primeiroNome "Alyssa" ;
+:segundoNome "Howard" ;
+:_id "60b3eeb9fc87ff10010ae517" ;
+:dataEMD "2019-08-25" ;
+:email "alyssa.howard@scbraga.info" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 26 ;
+:index 2 ;
+:morada "Conestoga" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9e966a3cf1239840a
+:a60b3eeb9e966a3cf1239840a rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Badminton ;
+:primeiroNome "Merrill" ;
+:segundoNome "Fulton" ;
+:_id "60b3eeb9e966a3cf1239840a" ;
+:dataEMD "2020-06-29" ;
+:email "merrill.fulton@amigosmontanha.org" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 29 ;
+:index 3 ;
+:morada "Berlin" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9dbbc9f23e5c888ac
+:a60b3eeb9dbbc9f23e5c888ac rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Dança ;
+:primeiroNome "Jaime" ;
+:segundoNome "Erickson" ;
+:_id "60b3eeb9dbbc9f23e5c888ac" ;
+:dataEMD "2020-11-01" ;
+:email "jaime.erickson@abcbraga.co.uk" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 25 ;
+:index 4 ;
+:morada "Yardville" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9425c872217db611e
+:a60b3eeb9425c872217db611e rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Futebol ;
+:primeiroNome "Felicia" ;
+:segundoNome "Skinner" ;
+:_id "60b3eeb9425c872217db611e" ;
+:dataEMD "2019-09-09" ;
+:email "felicia.skinner@acdrcrespos.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 31 ;
+:index 5 ;
+:morada "Rosburg" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb967d2dd4be3e2c87d
+:a60b3eeb967d2dd4be3e2c87d rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Karaté ;
+:primeiroNome "Margaret" ;
+:segundoNome "Bray" ;
+:_id "60b3eeb967d2dd4be3e2c87d" ;
+:dataEMD "2020-07-12" ;
+:email "margaret.bray@clube de orientação do minho.biz" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 22 ;
+:index 6 ;
+:morada "Sardis" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb944e8f43647ed05f2
+:a60b3eeb944e8f43647ed05f2 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :SUP ;
+:primeiroNome "Etta" ;
+:segundoNome "Cotton" ;
+:_id "60b3eeb944e8f43647ed05f2" ;
+:dataEMD "2021-03-04" ;
+:email "etta.cotton@avcfamalicão.us" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 32 ;
+:index 7 ;
+:morada "Graniteville" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9bc3d74e0cb400631
+:a60b3eeb9bc3d74e0cb400631 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Equitação ;
+:primeiroNome "Kelley" ;
+:segundoNome "Davidson" ;
+:_id "60b3eeb9bc3d74e0cb400631" ;
+:dataEMD "2020-10-18" ;
+:email "kelley.davidson@avcfamalicão.com" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 25 ;
+:index 8 ;
+:morada "Ruckersville" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb934a2174ec11d92a6
+:a60b3eeb934a2174ec11d92a6 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :Ciclismo ;
+:primeiroNome "Crawford" ;
+:segundoNome "Merritt" ;
+:_id "60b3eeb934a2174ec11d92a6" ;
+:dataEMD "2019-08-18" ;
+:email "crawford.merritt@scbraga.net" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 27 ;
+:index 9 ;
+:morada "Roy" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9fa4e587712a640d4
+:a60b3eeb9fa4e587712a640d4 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Badminton ;
+:primeiroNome "Kim" ;
+:segundoNome "Buck" ;
+:_id "60b3eeb9fa4e587712a640d4" ;
+:dataEMD "2020-11-04" ;
+:email "kim.buck@avcfamalicão.tv" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 25 ;
+:index 10 ;
+:morada "Rosine" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb948dd398953308f2d
+:a60b3eeb948dd398953308f2d rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :Dança ;
+:primeiroNome "Gilda" ;
+:segundoNome "Schmidt" ;
+:_id "60b3eeb948dd398953308f2d" ;
+:dataEMD "2019-07-01" ;
+:email "gilda.schmidt@scbraga.me" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 29 ;
+:index 11 ;
+:morada "Enoree" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9a2085e98659a2f5b
+:a60b3eeb9a2085e98659a2f5b rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :Basquetebol ;
+:primeiroNome "Mcintosh" ;
+:segundoNome "Aguirre" ;
+:_id "60b3eeb9a2085e98659a2f5b" ;
+:dataEMD "2019-04-09" ;
+:email "mcintosh.aguirre@vitoria.name" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 35 ;
+:index 12 ;
+:morada "Emory" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9bfd86db079523f51
+:a60b3eeb9bfd86db079523f51 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Dança ;
+:primeiroNome "Ida" ;
+:segundoNome "Bradshaw" ;
+:_id "60b3eeb9bfd86db079523f51" ;
+:dataEMD "2020-11-25" ;
+:email "ida.bradshaw@clube de orientação do minho.ca" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 21 ;
+:index 13 ;
+:morada "Lowgap" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb98614ea36f88963ba
+:a60b3eeb98614ea36f88963ba rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :Dança ;
+:primeiroNome "Jefferson" ;
+:segundoNome "Pacheco" ;
+:_id "60b3eeb98614ea36f88963ba" ;
+:dataEMD "2020-04-08" ;
+:email "jefferson.pacheco@edviana.info" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 34 ;
+:index 14 ;
+:morada "Strykersville" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb910808af364c63729
+:a60b3eeb910808af364c63729 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Equitação ;
+:primeiroNome "Olson" ;
+:segundoNome "Hickman" ;
+:_id "60b3eeb910808af364c63729" ;
+:dataEMD "2020-12-14" ;
+:email "olson.hickman@acrroriz.org" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 35 ;
+:index 15 ;
+:morada "Madrid" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb939a5cb2da478d86c
+:a60b3eeb939a5cb2da478d86c rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :Futebol ;
+:primeiroNome "Malinda" ;
+:segundoNome "Mccall" ;
+:_id "60b3eeb939a5cb2da478d86c" ;
+:dataEMD "2020-06-09" ;
+:email "malinda.mccall@scbraga.co.uk" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 23 ;
+:index 16 ;
+:morada "Winchester" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb92b1debc068c42080
+:a60b3eeb92b1debc068c42080 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Triatlo ;
+:primeiroNome "Raquel" ;
+:segundoNome "Dejesus" ;
+:_id "60b3eeb92b1debc068c42080" ;
+:dataEMD "2020-10-06" ;
+:email "raquel.dejesus@acrroriz.biz" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 31 ;
+:index 17 ;
+:morada "Greenfields" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9ec44aba1040d2e1e
+:a60b3eeb9ec44aba1040d2e1e rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :GDGoma ;
+:temModalidade :Patinagem ;
+:primeiroNome "Daniel" ;
+:segundoNome "Chambers" ;
+:_id "60b3eeb9ec44aba1040d2e1e" ;
+:dataEMD "2020-02-06" ;
+:email "daniel.chambers@gdgoma.biz" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 22 ;
+:index 18 ;
+:morada "Nicholson" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9a9f081f26deada43
+:a60b3eeb9a9f081f26deada43 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Triatlo ;
+:primeiroNome "Samantha" ;
+:segundoNome "Sharp" ;
+:_id "60b3eeb9a9f081f26deada43" ;
+:dataEMD "2019-12-21" ;
+:email "samantha.sharp@acrroriz.us" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 23 ;
+:index 19 ;
+:morada "Elliott" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9468961b15e8e1277
+:a60b3eeb9468961b15e8e1277 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Basquetebol ;
+:primeiroNome "Robert" ;
+:segundoNome "Herman" ;
+:_id "60b3eeb9468961b15e8e1277" ;
+:dataEMD "2021-01-09" ;
+:email "robert.herman@clube de orientação do minho.com" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 33 ;
+:index 20 ;
+:morada "Weogufka" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9edcbd2a0befa0a74
+:a60b3eeb9edcbd2a0befa0a74 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Dança ;
+:primeiroNome "Olive" ;
+:segundoNome "Chapman" ;
+:_id "60b3eeb9edcbd2a0befa0a74" ;
+:dataEMD "2021-02-20" ;
+:email "olive.chapman@avcfamalicão.net" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 30 ;
+:index 21 ;
+:morada "Wikieup" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb97aecf09da8650e19
+:a60b3eeb97aecf09da8650e19 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :SUP ;
+:primeiroNome "Mccoy" ;
+:segundoNome "Blackburn" ;
+:_id "60b3eeb97aecf09da8650e19" ;
+:dataEMD "2019-04-30" ;
+:email "mccoy.blackburn@amigosmontanha.tv" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 29 ;
+:index 22 ;
+:morada "Osmond" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9d7265f5ab15e4fed
+:a60b3eeb9d7265f5ab15e4fed rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :SUP ;
+:primeiroNome "Lambert" ;
+:segundoNome "Ferrell" ;
+:_id "60b3eeb9d7265f5ab15e4fed" ;
+:dataEMD "2020-12-10" ;
+:email "lambert.ferrell@vitoria.me" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 30 ;
+:index 23 ;
+:morada "Rowe" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9217c0274b8a1022b
+:a60b3eeb9217c0274b8a1022b rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :Dança ;
+:primeiroNome "Small" ;
+:segundoNome "Coffey" ;
+:_id "60b3eeb9217c0274b8a1022b" ;
+:dataEMD "2019-03-12" ;
+:email "small.coffey@vitoria.name" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 29 ;
+:index 24 ;
+:morada "Waumandee" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9cc832d080dd2c0e0
+:a60b3eeb9cc832d080dd2c0e0 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Ciclismo ;
+:primeiroNome "Hicks" ;
+:segundoNome "Daniels" ;
+:_id "60b3eeb9cc832d080dd2c0e0" ;
+:dataEMD "2019-05-03" ;
+:email "hicks.daniels@abcbraga.ca" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 32 ;
+:index 25 ;
+:morada "Frizzleburg" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9bc920eef418c62ac
+:a60b3eeb9bc920eef418c62ac rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :Andebol ;
+:primeiroNome "Meghan" ;
+:segundoNome "Cabrera" ;
+:_id "60b3eeb9bc920eef418c62ac" ;
+:dataEMD "2019-03-23" ;
+:email "meghan.cabrera@edviana.info" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 28 ;
+:index 26 ;
+:morada "Shawmut" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9cf9c078af09a7b74
+:a60b3eeb9cf9c078af09a7b74 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :GDGoma ;
+:temModalidade :Esgrima ;
+:primeiroNome "Hubbard" ;
+:segundoNome "Hart" ;
+:_id "60b3eeb9cf9c078af09a7b74" ;
+:dataEMD "2019-01-12" ;
+:email "hubbard.hart@gdgoma.org" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 22 ;
+:index 27 ;
+:morada "Trucksville" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb968346da5d651b20d
+:a60b3eeb968346da5d651b20d rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Andebol ;
+:primeiroNome "Chelsea" ;
+:segundoNome "Gallegos" ;
+:_id "60b3eeb968346da5d651b20d" ;
+:dataEMD "2020-07-25" ;
+:email "chelsea.gallegos@avcfamalicão.co.uk" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 21 ;
+:index 28 ;
+:morada "Warren" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb91afe89807606d176
+:a60b3eeb91afe89807606d176 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Esgrima ;
+:primeiroNome "Natalie" ;
+:segundoNome "Figueroa" ;
+:_id "60b3eeb91afe89807606d176" ;
+:dataEMD "2020-03-16" ;
+:email "natalie.figueroa@clube de orientação do minho.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 33 ;
+:index 29 ;
+:morada "Jugtown" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9080c70a07ef5c4ac
+:a60b3eeb9080c70a07ef5c4ac rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :Futebol ;
+:primeiroNome "Hayes" ;
+:segundoNome "Ward" ;
+:_id "60b3eeb9080c70a07ef5c4ac" ;
+:dataEMD "2020-11-20" ;
+:email "hayes.ward@edviana.biz" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 30 ;
+:index 30 ;
+:morada "Accoville" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb96f9b421618f39954
+:a60b3eeb96f9b421618f39954 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Esgrima ;
+:primeiroNome "Graves" ;
+:segundoNome "Mccray" ;
+:_id "60b3eeb96f9b421618f39954" ;
+:dataEMD "2019-10-13" ;
+:email "graves.mccray@abcbraga.us" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 22 ;
+:index 31 ;
+:morada "Kipp" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb90afb40019dea8a64
+:a60b3eeb90afb40019dea8a64 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Karaté ;
+:primeiroNome "Mavis" ;
+:segundoNome "Riley" ;
+:_id "60b3eeb90afb40019dea8a64" ;
+:dataEMD "2020-09-27" ;
+:email "mavis.riley@amigosmontanha.com" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 31 ;
+:index 32 ;
+:morada "Nescatunga" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb90fc3f9678fed0903
+:a60b3eeb90fc3f9678fed0903 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Parapente ;
+:primeiroNome "Salas" ;
+:segundoNome "Joseph" ;
+:_id "60b3eeb90fc3f9678fed0903" ;
+:dataEMD "2019-09-09" ;
+:email "salas.joseph@amigosmontanha.net" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 30 ;
+:index 33 ;
+:morada "Greenwich" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9f0342bd19d6a5a39
+:a60b3eeb9f0342bd19d6a5a39 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :Futebol ;
+:primeiroNome "Carly" ;
+:segundoNome "Peck" ;
+:_id "60b3eeb9f0342bd19d6a5a39" ;
+:dataEMD "2020-10-22" ;
+:email "carly.peck@edviana.tv" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 33 ;
+:index 34 ;
+:morada "Byrnedale" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb966fd425e94c59395
+:a60b3eeb966fd425e94c59395 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :Orientação ;
+:primeiroNome "Ramirez" ;
+:segundoNome "Blevins" ;
+:_id "60b3eeb966fd425e94c59395" ;
+:dataEMD "2019-02-16" ;
+:email "ramirez.blevins@vitoria.me" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 35 ;
+:index 35 ;
+:morada "Bluetown" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb91977642e615c41e3
+:a60b3eeb91977642e615c41e3 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Orientação ;
+:primeiroNome "Parks" ;
+:segundoNome "Saunders" ;
+:_id "60b3eeb91977642e615c41e3" ;
+:dataEMD "2020-12-31" ;
+:email "parks.saunders@clube de orientação do minho.name" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 32 ;
+:index 36 ;
+:morada "Sheatown" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb93a24ff700a3928d5
+:a60b3eeb93a24ff700a3928d5 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Futebol ;
+:primeiroNome "Leanne" ;
+:segundoNome "Armstrong" ;
+:_id "60b3eeb93a24ff700a3928d5" ;
+:dataEMD "2021-01-13" ;
+:email "leanne.armstrong@amigosmontanha.ca" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 28 ;
+:index 37 ;
+:morada "Cochranville" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb99c434fb1a7c7c633
+:a60b3eeb99c434fb1a7c7c633 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Equitação ;
+:primeiroNome "Kline" ;
+:segundoNome "Stark" ;
+:_id "60b3eeb99c434fb1a7c7c633" ;
+:dataEMD "2020-03-22" ;
+:email "kline.stark@avcfamalicão.info" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 31 ;
+:index 38 ;
+:morada "Tedrow" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9f430b0e9e81165c4
+:a60b3eeb9f430b0e9e81165c4 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Dança ;
+:primeiroNome "Elliott" ;
+:segundoNome "Guzman" ;
+:_id "60b3eeb9f430b0e9e81165c4" ;
+:dataEMD "2019-02-18" ;
+:email "elliott.guzman@clube de orientação do minho.org" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 29 ;
+:index 39 ;
+:morada "Rutherford" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb94d27b52fe1b15f19
+:a60b3eeb94d27b52fe1b15f19 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Orientação ;
+:primeiroNome "Liz" ;
+:segundoNome "Baldwin" ;
+:_id "60b3eeb94d27b52fe1b15f19" ;
+:dataEMD "2019-08-06" ;
+:email "liz.baldwin@abcbraga.co.uk" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 23 ;
+:index 40 ;
+:morada "Basye" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb91ab516aa15e1199a
+:a60b3eeb91ab516aa15e1199a rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :GDGoma ;
+:temModalidade :Parapente ;
+:primeiroNome "Warner" ;
+:segundoNome "Bullock" ;
+:_id "60b3eeb91ab516aa15e1199a" ;
+:dataEMD "2020-10-16" ;
+:email "warner.bullock@gdgoma.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 35 ;
+:index 41 ;
+:morada "Valle" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb97b17e786bdf88e29
+:a60b3eeb97b17e786bdf88e29 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :Futebol ;
+:primeiroNome "Santana" ;
+:segundoNome "Harper" ;
+:_id "60b3eeb97b17e786bdf88e29" ;
+:dataEMD "2019-12-18" ;
+:email "santana.harper@scbraga.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 32 ;
+:index 42 ;
+:morada "Malo" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb95762eb38f4ae9a22
+:a60b3eeb95762eb38f4ae9a22 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Atletismo ;
+:primeiroNome "Imelda" ;
+:segundoNome "Odonnell" ;
+:_id "60b3eeb95762eb38f4ae9a22" ;
+:dataEMD "2019-01-18" ;
+:email "imelda.odonnell@avcfamalicão.us" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 31 ;
+:index 43 ;
+:morada "Riviera" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9c05f073a238c4aa6
+:a60b3eeb9c05f073a238c4aa6 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Futebol ;
+:primeiroNome "Lila" ;
+:segundoNome "Curry" ;
+:_id "60b3eeb9c05f073a238c4aa6" ;
+:dataEMD "2020-09-24" ;
+:email "lila.curry@amigosmontanha.com" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 23 ;
+:index 44 ;
+:morada "Alden" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9c82e74bc1831a3be
+:a60b3eeb9c82e74bc1831a3be rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Patinagem ;
+:primeiroNome "Milagros" ;
+:segundoNome "Ellis" ;
+:_id "60b3eeb9c82e74bc1831a3be" ;
+:dataEMD "2020-02-06" ;
+:email "milagros.ellis@acdrcrespos.net" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 21 ;
+:index 45 ;
+:morada "Why" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9e81cdbbee14cab97
+:a60b3eeb9e81cdbbee14cab97 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Dança ;
+:primeiroNome "Stafford" ;
+:segundoNome "Hale" ;
+:_id "60b3eeb9e81cdbbee14cab97" ;
+:dataEMD "2019-07-15" ;
+:email "stafford.hale@acdrcrespos.tv" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 29 ;
+:index 46 ;
+:morada "Bowden" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb983fb3181e8f43d12
+:a60b3eeb983fb3181e8f43d12 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Triatlo ;
+:primeiroNome "Blevins" ;
+:segundoNome "Cline" ;
+:_id "60b3eeb983fb3181e8f43d12" ;
+:dataEMD "2021-05-05" ;
+:email "blevins.cline@clube de orientação do minho.me" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 22 ;
+:index 47 ;
+:morada "Delshire" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9817b6dc6e2848304
+:a60b3eeb9817b6dc6e2848304 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Parapente ;
+:primeiroNome "Marisol" ;
+:segundoNome "Owen" ;
+:_id "60b3eeb9817b6dc6e2848304" ;
+:dataEMD "2020-07-15" ;
+:email "marisol.owen@acdrcrespos.name" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 23 ;
+:index 48 ;
+:morada "Soham" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9ab56338f42cdaf13
+:a60b3eeb9ab56338f42cdaf13 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Atletismo ;
+:primeiroNome "Mcintyre" ;
+:segundoNome "Walsh" ;
+:_id "60b3eeb9ab56338f42cdaf13" ;
+:dataEMD "2020-07-02" ;
+:email "mcintyre.walsh@abcbraga.ca" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 31 ;
+:index 49 ;
+:morada "Beechmont" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9de8d709dd3fd086f
+:a60b3eeb9de8d709dd3fd086f rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Futebol ;
+:primeiroNome "Valarie" ;
+:segundoNome "Silva" ;
+:_id "60b3eeb9de8d709dd3fd086f" ;
+:dataEMD "2020-11-06" ;
+:email "valarie.silva@acdrcrespos.info" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 25 ;
+:index 50 ;
+:morada "Lynn" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9077997c0e212f286
+:a60b3eeb9077997c0e212f286 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Atletismo ;
+:primeiroNome "Jimmie" ;
+:segundoNome "Beck" ;
+:_id "60b3eeb9077997c0e212f286" ;
+:dataEMD "2020-01-06" ;
+:email "jimmie.beck@avcfamalicão.org" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 34 ;
+:index 51 ;
+:morada "Walker" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb916caa13610b8cadf
+:a60b3eeb916caa13610b8cadf rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Futebol ;
+:primeiroNome "Amparo" ;
+:segundoNome "Price" ;
+:_id "60b3eeb916caa13610b8cadf" ;
+:dataEMD "2019-08-30" ;
+:email "amparo.price@acdrcrespos.co.uk" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 30 ;
+:index 52 ;
+:morada "Townsend" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9c65ee38149a83dfc
+:a60b3eeb9c65ee38149a83dfc rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :Orientação ;
+:primeiroNome "Susanna" ;
+:segundoNome "Lowery" ;
+:_id "60b3eeb9c65ee38149a83dfc" ;
+:dataEMD "2021-01-24" ;
+:email "susanna.lowery@edviana.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 33 ;
+:index 53 ;
+:morada "Cawood" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb97c9c1d91087c47a4
+:a60b3eeb97c9c1d91087c47a4 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Atletismo ;
+:primeiroNome "Flynn" ;
+:segundoNome "Huber" ;
+:_id "60b3eeb97c9c1d91087c47a4" ;
+:dataEMD "2020-08-23" ;
+:email "flynn.huber@clube de orientação do minho.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 26 ;
+:index 54 ;
+:morada "Teasdale" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb97aabcddbffca43f3
+:a60b3eeb97aabcddbffca43f3 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Equitação ;
+:primeiroNome "Elaine" ;
+:segundoNome "Allen" ;
+:_id "60b3eeb97aabcddbffca43f3" ;
+:dataEMD "2019-03-29" ;
+:email "elaine.allen@acdrcrespos.us" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 32 ;
+:index 55 ;
+:morada "Kaka" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb935b59a6c217af521
+:a60b3eeb935b59a6c217af521 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Karaté ;
+:primeiroNome "Gwen" ;
+:segundoNome "Pate" ;
+:_id "60b3eeb935b59a6c217af521" ;
+:dataEMD "2020-09-24" ;
+:email "gwen.pate@amigosmontanha.com" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 26 ;
+:index 56 ;
+:morada "Snelling" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb972a330700a58a10a
+:a60b3eeb972a330700a58a10a rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Parapente ;
+:primeiroNome "Leila" ;
+:segundoNome "Solis" ;
+:_id "60b3eeb972a330700a58a10a" ;
+:dataEMD "2020-08-19" ;
+:email "leila.solis@acrroriz.net" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 34 ;
+:index 57 ;
+:morada "Glenville" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9a78530cac96a3f79
+:a60b3eeb9a78530cac96a3f79 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :GDGoma ;
+:temModalidade :Dança ;
+:primeiroNome "Mercedes" ;
+:segundoNome "Heath" ;
+:_id "60b3eeb9a78530cac96a3f79" ;
+:dataEMD "2021-04-17" ;
+:email "mercedes.heath@gdgoma.tv" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 31 ;
+:index 58 ;
+:morada "Chaparrito" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9235de1538781611d
+:a60b3eeb9235de1538781611d rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :Basquetebol ;
+:primeiroNome "Althea" ;
+:segundoNome "Fitzpatrick" ;
+:_id "60b3eeb9235de1538781611d" ;
+:dataEMD "2019-05-03" ;
+:email "althea.fitzpatrick@edviana.me" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 24 ;
+:index 59 ;
+:morada "Marne" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9f7311f86c6a33646
+:a60b3eeb9f7311f86c6a33646 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :Orientação ;
+:primeiroNome "Arlene" ;
+:segundoNome "Morton" ;
+:_id "60b3eeb9f7311f86c6a33646" ;
+:dataEMD "2019-12-09" ;
+:email "arlene.morton@vitoria.name" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 34 ;
+:index 60 ;
+:morada "Wiscon" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9354e8a0e1817c201
+:a60b3eeb9354e8a0e1817c201 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :BTT ;
+:primeiroNome "Mosley" ;
+:segundoNome "Gonzales" ;
+:_id "60b3eeb9354e8a0e1817c201" ;
+:dataEMD "2020-09-26" ;
+:email "mosley.gonzales@scbraga.ca" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 26 ;
+:index 61 ;
+:morada "Driftwood" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9e6ca114d8ab96bc4
+:a60b3eeb9e6ca114d8ab96bc4 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Dança ;
+:primeiroNome "Torres" ;
+:segundoNome "Hardy" ;
+:_id "60b3eeb9e6ca114d8ab96bc4" ;
+:dataEMD "2019-08-31" ;
+:email "torres.hardy@clube de orientação do minho.info" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 33 ;
+:index 62 ;
+:morada "Fairfield" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb945accec6f3eb9c3d
+:a60b3eeb945accec6f3eb9c3d rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Dança ;
+:primeiroNome "Annmarie" ;
+:segundoNome "Petersen" ;
+:_id "60b3eeb945accec6f3eb9c3d" ;
+:dataEMD "2020-12-13" ;
+:email "annmarie.petersen@clube de orientação do minho.org" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 22 ;
+:index 63 ;
+:morada "Twilight" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb92a2f391cda5b305e
+:a60b3eeb92a2f391cda5b305e rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Karaté ;
+:primeiroNome "Osborn" ;
+:segundoNome "Green" ;
+:_id "60b3eeb92a2f391cda5b305e" ;
+:dataEMD "2020-12-03" ;
+:email "osborn.green@acrroriz.co.uk" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 32 ;
+:index 64 ;
+:morada "Jacksonwald" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9a57cc0f98a998c9a
+:a60b3eeb9a57cc0f98a998c9a rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Patinagem ;
+:primeiroNome "Davenport" ;
+:segundoNome "Dominguez" ;
+:_id "60b3eeb9a57cc0f98a998c9a" ;
+:dataEMD "2020-08-26" ;
+:email "davenport.dominguez@acrroriz.biz" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 23 ;
+:index 65 ;
+:morada "Vallonia" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb94b33eaa274778def
+:a60b3eeb94b33eaa274778def rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Parapente ;
+:primeiroNome "Barton" ;
+:segundoNome "Massey" ;
+:_id "60b3eeb94b33eaa274778def" ;
+:dataEMD "2019-12-20" ;
+:email "barton.massey@amigosmontanha.biz" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 26 ;
+:index 66 ;
+:morada "Ribera" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9a78fd4bfe9e36453
+:a60b3eeb9a78fd4bfe9e36453 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Orientação ;
+:primeiroNome "Holly" ;
+:segundoNome "Bowen" ;
+:_id "60b3eeb9a78fd4bfe9e36453" ;
+:dataEMD "2019-06-09" ;
+:email "holly.bowen@acdrcrespos.us" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 29 ;
+:index 67 ;
+:morada "Adamstown" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9868c63b27774163f
+:a60b3eeb9868c63b27774163f rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Atletismo ;
+:primeiroNome "Dennis" ;
+:segundoNome "Crawford" ;
+:_id "60b3eeb9868c63b27774163f" ;
+:dataEMD "2020-06-28" ;
+:email "dennis.crawford@amigosmontanha.com" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 30 ;
+:index 68 ;
+:morada "Wanship" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9a857578bd25302db
+:a60b3eeb9a857578bd25302db rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :Ténis ;
+:primeiroNome "Oliver" ;
+:segundoNome "Mcleod" ;
+:_id "60b3eeb9a857578bd25302db" ;
+:dataEMD "2019-05-25" ;
+:email "oliver.mcleod@scbraga.net" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 25 ;
+:index 69 ;
+:morada "Garnet" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9abbaec58aed568da
+:a60b3eeb9abbaec58aed568da rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Vitoria ;
+:temModalidade :Ciclismo ;
+:primeiroNome "Tameka" ;
+:segundoNome "Orr" ;
+:_id "60b3eeb9abbaec58aed568da" ;
+:dataEMD "2019-03-01" ;
+:email "tameka.orr@vitoria.tv" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 24 ;
+:index 70 ;
+:morada "Klagetoh" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb90d885cf3327fe6bd
+:a60b3eeb90d885cf3327fe6bd rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Patinagem ;
+:primeiroNome "Foster" ;
+:segundoNome "Strickland" ;
+:_id "60b3eeb90d885cf3327fe6bd" ;
+:dataEMD "2020-05-28" ;
+:email "foster.strickland@clube de orientação do minho.me" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 29 ;
+:index 71 ;
+:morada "Holtville" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb91ded4fa3db5fdf8e
+:a60b3eeb91ded4fa3db5fdf8e rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :Ténis ;
+:primeiroNome "Marlene" ;
+:segundoNome "Rodgers" ;
+:_id "60b3eeb91ded4fa3db5fdf8e" ;
+:dataEMD "2019-10-26" ;
+:email "marlene.rodgers@scbraga.name" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 27 ;
+:index 72 ;
+:morada "Levant" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb909f2540c651ec8ff
+:a60b3eeb909f2540c651ec8ff rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Andebol ;
+:primeiroNome "Shari" ;
+:segundoNome "Mathews" ;
+:_id "60b3eeb909f2540c651ec8ff" ;
+:dataEMD "2020-04-12" ;
+:email "shari.mathews@acdrcrespos.ca" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 22 ;
+:index 73 ;
+:morada "Joes" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb91c3038d321c60bb3
+:a60b3eeb91c3038d321c60bb3 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Badminton ;
+:primeiroNome "Josie" ;
+:segundoNome "Rasmussen" ;
+:_id "60b3eeb91c3038d321c60bb3" ;
+:dataEMD "2021-05-07" ;
+:email "josie.rasmussen@acdrcrespos.info" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 34 ;
+:index 74 ;
+:morada "Riverton" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9c4b1d5f4d4a0099b
+:a60b3eeb9c4b1d5f4d4a0099b rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :Parapente ;
+:primeiroNome "Shelton" ;
+:segundoNome "Walton" ;
+:_id "60b3eeb9c4b1d5f4d4a0099b" ;
+:dataEMD "2020-06-22" ;
+:email "shelton.walton@edviana.org" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 35 ;
+:index 75 ;
+:morada "Williston" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9cded7ae5d2724d52
+:a60b3eeb9cded7ae5d2724d52 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :GDGoma ;
+:temModalidade :BTT ;
+:primeiroNome "Odonnell" ;
+:segundoNome "Russell" ;
+:_id "60b3eeb9cded7ae5d2724d52" ;
+:dataEMD "2020-11-21" ;
+:email "odonnell.russell@gdgoma.co.uk" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 31 ;
+:index 76 ;
+:morada "Alderpoint" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb91485796dedd2444b
+:a60b3eeb91485796dedd2444b rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :SUP ;
+:primeiroNome "Elba" ;
+:segundoNome "Le" ;
+:_id "60b3eeb91485796dedd2444b" ;
+:dataEMD "2021-02-04" ;
+:email "elba.le@acrroriz.biz" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 30 ;
+:index 77 ;
+:morada "Ebro" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9fbb0206c040aa4f1
+:a60b3eeb9fbb0206c040aa4f1 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :GDGoma ;
+:temModalidade :Equitação ;
+:primeiroNome "Sweet" ;
+:segundoNome "Woodward" ;
+:_id "60b3eeb9fbb0206c040aa4f1" ;
+:dataEMD "2019-10-20" ;
+:email "sweet.woodward@gdgoma.biz" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 22 ;
+:index 78 ;
+:morada "Urie" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9ef81456a2178baca
+:a60b3eeb9ef81456a2178baca rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Dança ;
+:primeiroNome "Wilkins" ;
+:segundoNome "Cummings" ;
+:_id "60b3eeb9ef81456a2178baca" ;
+:dataEMD "2020-02-24" ;
+:email "wilkins.cummings@acrroriz.us" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 33 ;
+:index 79 ;
+:morada "Gila" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb929306aeaff7f31a0
+:a60b3eeb929306aeaff7f31a0 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :BTT ;
+:primeiroNome "Rogers" ;
+:segundoNome "Noel" ;
+:_id "60b3eeb929306aeaff7f31a0" ;
+:dataEMD "2021-02-04" ;
+:email "rogers.noel@acdrcrespos.com" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 35 ;
+:index 80 ;
+:morada "Cresaptown" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb99d4b85092734ded4
+:a60b3eeb99d4b85092734ded4 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Andebol ;
+:primeiroNome "Hodges" ;
+:segundoNome "Ashley" ;
+:_id "60b3eeb99d4b85092734ded4" ;
+:dataEMD "2021-03-08" ;
+:email "hodges.ashley@abcbraga.net" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 31 ;
+:index 81 ;
+:morada "Crawfordsville" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb96b4950f33f42c5b6
+:a60b3eeb96b4950f33f42c5b6 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Parapente ;
+:primeiroNome "Curtis" ;
+:segundoNome "Dillon" ;
+:_id "60b3eeb96b4950f33f42c5b6" ;
+:dataEMD "2020-12-19" ;
+:email "curtis.dillon@amigosmontanha.tv" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 29 ;
+:index 82 ;
+:morada "Beason" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9c4c935218799831f
+:a60b3eeb9c4c935218799831f rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :GDGoma ;
+:temModalidade :Ténis ;
+:primeiroNome "Lelia" ;
+:segundoNome "Oliver" ;
+:_id "60b3eeb9c4c935218799831f" ;
+:dataEMD "2021-02-08" ;
+:email "lelia.oliver@gdgoma.me" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 30 ;
+:index 83 ;
+:morada "Cedarville" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb91dbe172db8fd8f61
+:a60b3eeb91dbe172db8fd8f61 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :BTT ;
+:primeiroNome "Fuentes" ;
+:segundoNome "Rogers" ;
+:_id "60b3eeb91dbe172db8fd8f61" ;
+:dataEMD "2019-02-07" ;
+:email "fuentes.rogers@scbraga.name" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 28 ;
+:index 84 ;
+:morada "Grazierville" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9c7550e5dc5a5ddb1
+:a60b3eeb9c7550e5dc5a5ddb1 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AmigosMontanha ;
+:temModalidade :Orientação ;
+:primeiroNome "Carole" ;
+:segundoNome "Lindsey" ;
+:_id "60b3eeb9c7550e5dc5a5ddb1" ;
+:dataEMD "2020-05-28" ;
+:email "carole.lindsey@amigosmontanha.ca" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 34 ;
+:index 85 ;
+:morada "Weedville" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb95632a2a2915ae72b
+:a60b3eeb95632a2a2915ae72b rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :SUP ;
+:primeiroNome "Martinez" ;
+:segundoNome "Johns" ;
+:_id "60b3eeb95632a2a2915ae72b" ;
+:dataEMD "2019-07-27" ;
+:email "martinez.johns@abcbraga.info" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 32 ;
+:index 86 ;
+:morada "Hebron" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9af56ea737b79ac30
+:a60b3eeb9af56ea737b79ac30 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :Equitação ;
+:primeiroNome "Kellie" ;
+:segundoNome "Holland" ;
+:_id "60b3eeb9af56ea737b79ac30" ;
+:dataEMD "2020-07-21" ;
+:email "kellie.holland@scbraga.org" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 30 ;
+:index 87 ;
+:morada "Bloomington" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9e387855b0de81d09
+:a60b3eeb9e387855b0de81d09 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :Futebol ;
+:primeiroNome "Mathis" ;
+:segundoNome "Kirk" ;
+:_id "60b3eeb9e387855b0de81d09" ;
+:dataEMD "2019-06-27" ;
+:email "mathis.kirk@edviana.co.uk" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 23 ;
+:index 88 ;
+:morada "Klondike" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb93bfe7ecd8361f659
+:a60b3eeb93bfe7ecd8361f659 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :GDGoma ;
+:temModalidade :Orientação ;
+:primeiroNome "Bertha" ;
+:segundoNome "Shelton" ;
+:_id "60b3eeb93bfe7ecd8361f659" ;
+:dataEMD "2019-10-22" ;
+:email "bertha.shelton@gdgoma.biz" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 28 ;
+:index 89 ;
+:morada "Sedley" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9860033876d65f5f7
+:a60b3eeb9860033876d65f5f7 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :SCBraga ;
+:temModalidade :Ténis ;
+:primeiroNome "Bonnie" ;
+:segundoNome "Diaz" ;
+:_id "60b3eeb9860033876d65f5f7" ;
+:dataEMD "2020-01-08" ;
+:email "bonnie.diaz@scbraga.biz" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 31 ;
+:index 90 ;
+:morada "Gerton" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb97a2511a770990f0f
+:a60b3eeb97a2511a770990f0f rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Futebol ;
+:primeiroNome "Becker" ;
+:segundoNome "Talley" ;
+:_id "60b3eeb97a2511a770990f0f" ;
+:dataEMD "2020-08-23" ;
+:email "becker.talley@clube de orientação do minho.us" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 31 ;
+:index 91 ;
+:morada "Valmy" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9080a93e404ab974a
+:a60b3eeb9080a93e404ab974a rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Equitação ;
+:primeiroNome "Zelma" ;
+:segundoNome "Bell" ;
+:_id "60b3eeb9080a93e404ab974a" ;
+:dataEMD "2019-08-11" ;
+:email "zelma.bell@clube de orientação do minho.com" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 30 ;
+:index 92 ;
+:morada "Shasta" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb96e988bb711c0c940
+:a60b3eeb96e988bb711c0c940 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :EDViana ;
+:temModalidade :BTT ;
+:primeiroNome "Stanton" ;
+:segundoNome "Cox" ;
+:_id "60b3eeb96e988bb711c0c940" ;
+:dataEMD "2019-09-29" ;
+:email "stanton.cox@edviana.net" ;
+:federado "false"^^xsd:boolean ;
+:genero "F" ;
+:idade 22 ;
+:index 93 ;
+:morada "Foxworth" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb97d329fb5b3d7379b
+:a60b3eeb97d329fb5b3d7379b rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :AVCfamalicão ;
+:temModalidade :Ciclismo ;
+:primeiroNome "Cindy" ;
+:segundoNome "Shepherd" ;
+:_id "60b3eeb97d329fb5b3d7379b" ;
+:dataEMD "2020-07-15" ;
+:email "cindy.shepherd@avcfamalicão.tv" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 23 ;
+:index 94 ;
+:morada "Brule" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb95b00f32d469ef4b2
+:a60b3eeb95b00f32d469ef4b2 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Futebol ;
+:primeiroNome "Knapp" ;
+:segundoNome "Buckner" ;
+:_id "60b3eeb95b00f32d469ef4b2" ;
+:dataEMD "2020-09-20" ;
+:email "knapp.buckner@abcbraga.me" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 31 ;
+:index 95 ;
+:morada "Rose" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb91accf4bd8b426245
+:a60b3eeb91accf4bd8b426245 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ABCbraga ;
+:temModalidade :Parapente ;
+:primeiroNome "Callahan" ;
+:segundoNome "Mitchell" ;
+:_id "60b3eeb91accf4bd8b426245" ;
+:dataEMD "2020-11-27" ;
+:email "callahan.mitchell@abcbraga.name" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 24 ;
+:index 96 ;
+:morada "Wollochet" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9dd4dc919156890ee
+:a60b3eeb9dd4dc919156890ee rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACRroriz ;
+:temModalidade :Equitação ;
+:primeiroNome "Allie" ;
+:segundoNome "Lyons" ;
+:_id "60b3eeb9dd4dc919156890ee" ;
+:dataEMD "2021-01-10" ;
+:email "allie.lyons@acrroriz.ca" ;
+:federado "false"^^xsd:boolean ;
+:genero "M" ;
+:idade 31 ;
+:index 97 ;
+:morada "Welch" ;
+:resultado "false"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9d9f01093dc14973f
+:a60b3eeb9d9f01093dc14973f rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :ACDRcrespos ;
+:temModalidade :Futebol ;
+:primeiroNome "Tammy" ;
+:segundoNome "Bryant" ;
+:_id "60b3eeb9d9f01093dc14973f" ;
+:dataEMD "2020-05-08" ;
+:email "tammy.bryant@acdrcrespos.info" ;
+:federado "true"^^xsd:boolean ;
+:genero "M" ;
+:idade 32 ;
+:index 98 ;
+:morada "Fidelis" ;
+:resultado "true"^^xsd:boolean .
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#a60b3eeb9d027f625a1b63723
+:a60b3eeb9d027f625a1b63723 rdf:type owl:NamedIndividual ,
+      :Atleta ;
+:temClube :Clube_de_Orientação_do_Minho ;
+:temModalidade :Esgrima ;
+:primeiroNome "Carissa" ;
+:segundoNome "Rosario" ;
+:_id "60b3eeb9d027f625a1b63723" ;
+:dataEMD "2021-01-02" ;
+:email "carissa.rosario@clube de orientação do minho.org" ;
+:federado "true"^^xsd:boolean ;
+:genero "F" ;
+:idade 30 ;
+:index 99 ;
+:morada "Brookfield" ;
+:resultado "true"^^xsd:boolean .
+
+
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,41 @@
+1 - Constrói os triplos da relação Irmão;
+
+construct{ 
+    ?a :temIrmao ?b.
+    }
+where{
+    ?a :temProgenitor ?p1 .
+    ?b :temProgenitor ?p1 .
+    filter( ?a != ?b ) . 
+}
+
+2 - Constrói os triplos da relação Bisavô;
+
+construct{ 
+    ?a :temBisavo ?b.
+    }
+where{
+    ?a :temProgenitor ?p1 .
+    ?p1 :temProgenitor ?p2 .
+    ?p2 :temProgenitor ?b.
+}
+
+3 - Constrói os triplos da relação Descendentes;
+
+construct{ 
+    ?a :eDescendenteDe ?b.
+    }
+where{
+    ?b :eProgenitorDe ?b .
+}
+
+4 - Constrói os triplos da relação Primo;
+
+construct{ 
+    ?a :ePrimoDe ?b.
+    }
+where{
+    ?a :temProgenitor ?p1.
+    ?p1 :temIrmao ?p2.
+    ?p2 :eProgenitorDe ?b.
+}

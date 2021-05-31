@@ -1,0 +1,73 @@
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Futebol
+:Futebol rdf:type owl:NamedIndividual ,
+			:Modalidade.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Triatlo
+:Triatlo rdf:type owl:NamedIndividual ,
+			:Modalidade.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Badminton
+:Badminton rdf:type owl:NamedIndividual ,
+			:Modalidade.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Ciclismo
+:Ciclismo rdf:type owl:NamedIndividual ,
+			:Modalidade.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Patinagem
+:Patinagem rdf:type owl:NamedIndividual ,
+			:Modalidade.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Parapente
+:Parapente rdf:type owl:NamedIndividual ,
+			:Modalidade.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Orientação
+:Orientação rdf:type owl:NamedIndividual ,
+			:Modalidade.
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Esgrima
+:Esgrima rdf:type owl:NamedIndividual ,
+			:Modalidade.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#BTT
+:BTT rdf:type owl:NamedIndividual ,
+			:Modalidade.
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Atletismo
+:Atletismo rdf:type owl:NamedIndividual ,
+			:Modalidade.
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#SUP
+:SUP rdf:type owl:NamedIndividual ,
+			:Modalidade.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Basquetebol
+:Basquetebol rdf:type owl:NamedIndividual ,
+			:Modalidade.
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Karaté
+:Karaté rdf:type owl:NamedIndividual ,
+			:Modalidade.
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Dança
+:Dança rdf:type owl:NamedIndividual ,
+			:Modalidade.
+
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Andebol
+:Andebol rdf:type owl:NamedIndividual ,
+			:Modalidade.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Equitação
+:Equitação rdf:type owl:NamedIndividual ,
+			:Modalidade.
+
+###  http://www.semanticweb.org/aninhas/ontologies/gestaoEMDs#Ténis
+:Ténis rdf:type owl:NamedIndividual ,
+			:Modalidade.
